@@ -1,4 +1,4 @@
-# frontendmentor
+# Fontendmentor
 
 Just front end design practice. I just try to recreate the examples provided here
 <br>
