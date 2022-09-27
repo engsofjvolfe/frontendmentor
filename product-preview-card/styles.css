@@ -120,8 +120,6 @@ button:active {
     background: var(--darkBlue);
 }
 
-
-
 @media(min-width:576px) {
     body {
         max-width: 100%;
