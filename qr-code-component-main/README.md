@@ -23,4 +23,4 @@ The users should be able to:
 
 See the page here [ProductPreview-Page](https://jvolfe-qrcode-component.netlify.app/)
 
-You can copy this repo, i left all folders and instructions here (except for this readme file, i changed it)
+You can copy this repo, i left all folders and instructions here (except for this readme file, i changed it and i deleted the readme for styles)
