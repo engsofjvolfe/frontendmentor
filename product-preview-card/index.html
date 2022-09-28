@@ -15,18 +15,17 @@
   <body>
     <div class="general-container">
       <header>
-        <div class="container">
-          <img
-            class="img-mobile"
-            src="images/image-product-mobile.jpg"
-            alt="Perfume"
+        <picture>
+          <source
+            media="(max-width:768px)"
+            srcset="./images/image-product-mobile.jpg"
           />
           <img
-            class="img-desktop"
-            src="images/image-product-desktop.jpg"
-            alt=""
+            src="./images/image-product-desktop.jpg"
+            alt="Gabrielle Parfum"
+            style="width: auto"
           />
-        </div>
+        </picture>
       </header>
       <main>
         <div class="container-main">
