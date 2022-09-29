@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --paleRoot: var(--paleRoot);
+    --grayishBlue: hsl(229, 7%, 55%);
+    --darkBlue: hsl(228, 56%, 26%);
+    --veryDarkBlue: hsl(229, 57%, 11%);
+    --white: #fff;
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%),
+            hsl(335, 100%, 65%));
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    color: var(--white);
+    background: url(images/bg-mobile.png) no-repeat;
+    background-size: cover;
+}
+
+.container-body {
+    width: 100%;
+    min-width: 21.875rem;
+    max-width: 21.875rem;
+    margin: 0 auto;
+}
+
+/* FST BOX SECTION */
+header {
+    background: var(--darkBlue);
+    height: 12.5rem;
+    border-radius: 0.625rem 5rem 0.625rem 0.625rem;
+    margin-bottom: 1.25rem;
+    padding: 2.1875rem 0 2.8125rem 2.1875rem;
+}
+
+.container-logo {
+    margin-bottom: 2.1875rem;
+}
+
+.container-icons {
+    display: flex;
+}
+
+.individual-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--veryDarkBlue);
+    width: 3.125rem;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
+    margin-right: 1.25rem;
+}
+
+/* END FST BOX SECTION */
+
+/* MAIN BOX SECTION */
+main {
+    background: var(--darkBlue);
+    height: 12.5rem;
+    border-radius: 0.625rem 0.625rem 0.625rem 0.625rem;
+    margin-bottom: 1.25rem;
+    padding: 2.1875rem 0 2.8125rem 2.1875rem;
+    position: relative;
+}
+
+.container-main-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.04375rem;
+}
+
+.loading-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 0.9375rem;
+    width: 85%;
+    height: 1.25rem;
+    background-color: var(--veryDarkBlue);
+    border-radius: 1.875rem;
+}
+
+.loaded-bar {
+    display: flex;
+    align-items: center;
+    width: 77%;
+    height: 0.9375rem;
+    margin-left: 2px;
+    background-image: var(--gradient);
+    border-radius: 1.875rem;
+}
+
+.loading-dot {
+    width: 4%;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin-left: 95%;
+}
+
+.container-consume {
+    width: 85%;
+    margin-top: 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/* "WHITE" BOX SECTION*/
+main>section>.container-main-second {
+    display: flex;
+    background: var(--white);
+    color: #000;
+    height: 90px;
+    width: 15rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+}
+
+.container-main-second strong {
+    font-size: 3.125rem;
+    margin-right: 0.9375rem;
+    font-weight: 700;
+}
+
+.p-uppercase {
+    color: var(--grayishBlue);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* END WHITE BOX SECTION */
+/* END MAIN BOX SECTION */
