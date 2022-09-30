@@ -101,14 +101,14 @@ main {
     align-items: center;
     width: 77%;
     height: 0.9375rem;
-    margin-left: 2px;
+    margin-left: 0.125rem;
     background-image: var(--gradient);
     border-radius: 1.875rem;
 }
 
 .loading-dot {
     width: 4%;
-    height: 12px;
+    height: 0.75rem;
     border-radius: 50%;
     background-color: var(--white);
     margin-left: 95%;
@@ -170,15 +170,15 @@ main>section>.container-main-second {
         display: flex;
         justify-content: center;
         width: 100vw;
-        max-width: 1440px;
-        margin: 0 20px;
+        max-width: 90rem;
+        margin: 0 1.25rem;
     }
 
     header {
         display: flex;
         align-items: center;
         min-width: 30%;
-        height: 240px;
+        height: 15rem;
         margin-right: 30px;
     }
 
@@ -188,12 +188,12 @@ main>section>.container-main-second {
     }
 
     main {
-        margin-top: 40px;
+        margin-top: 2.5rem;
         height: 200px;
         width: 100%;
-        max-width: 700px;
+        max-width: 43.75rem;
         display: flex;
-        padding-top: 60px;
+        padding-top: 3.75rem;
     }
 
     .container-main-first>p {
@@ -202,10 +202,10 @@ main>section>.container-main-second {
 
     .container-main-second {
         position: relative;
-        height: 80px;
+        height: 5rem;
         top: -20%;
         right: 20%;
-        
+
     }
 
     .container-main-second div {
@@ -220,9 +220,9 @@ main>section>.container-main-second {
         right: 8%;
         top: 21%;
         background-color: var(--white);
-        border-top: 35px solid white;
+        border-top: 2.1875rem solid white;
         border-right: none;
-        border-left: 20px solid transparent;
+        border-left: 1.25rem solid transparent;
         border-bottom: none;
         background-clip: padding-box;
     }
