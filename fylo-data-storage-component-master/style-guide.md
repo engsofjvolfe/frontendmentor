@@ -30,3 +30,20 @@ The designs were created to the following widths:
 
 - Family: [Raleway](https://fonts.google.com/specimen/Raleway)
 - Weights: 400, 700
+
+
+### TRICK FOR BALOON TIP
+HTML
+    <div class="baloon-tip"></div>
+CSS
+    .baloon-tip {
+        position: absolute;
+        right: 5%;
+        top: 12%;
+        background-color: var(--white);
+        border-top: 60px solid var(--white);
+        border-right: 50px solid transparent;
+        background-clip: padding-box;
+        padding: 0 10px 10px 10px;
+        transform: rotate(90deg);
+    }
