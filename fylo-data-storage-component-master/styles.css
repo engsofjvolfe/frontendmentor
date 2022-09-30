@@ -157,7 +157,7 @@ main>section>.container-main-second {
 
 /* END WHITE BOX SECTION */
 /* END MAIN BOX SECTION */
-@media(min-width:992px) {
+@media(min-width:768px) {
 
     body {
         width: 100%;
@@ -205,16 +205,16 @@ main>section>.container-main-second {
         height: 80px;
         top: -20%;
         right: 20%;
+        
     }
 
     .container-main-second div {
         position: absolute;
         right: 8%;
+        border-radius: 0.625rem, 0.625rem, 0, 0.625rem;
     }
 
     /* create the baloon tip */
-
-
     .baloon-tip {
         position: absolute;
         right: 8%;
