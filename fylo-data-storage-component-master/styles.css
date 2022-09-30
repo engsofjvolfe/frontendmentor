@@ -124,6 +124,16 @@ main {
 /* "WHITE" BOX SECTION*/
 main>section>.container-main-second {
     display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+}
+
+.container-main-second div {
+    display: flex;
     background: var(--white);
     color: #000;
     height: 90px;
@@ -131,10 +141,6 @@ main>section>.container-main-second {
     align-items: center;
     justify-content: center;
     border-radius: 0.625rem;
-    position: absolute;
-    left: 50%;
-    bottom: -20%;
-    transform: translateX(-50%); 
 }
 
 .container-main-second strong {
@@ -195,22 +201,30 @@ main>section>.container-main-second {
     }
 
     .container-main-second {
+        position: relative;
         height: 80px;
         top: -20%;
-        right: 5%;
+        right: 20%;
+    }
+
+    .container-main-second div{
+        position:absolute;
+        right: 8%;
     }
 
     /* create the baloon tip */
+
+
     .baloon-tip {
         position: absolute;
-        right: 5%;
-        top: 12%;
+        right: 8%;
+        top: 21%;
         background-color: var(--white);
-        border-top: 60px solid var(--white);
-        border-right: 50px solid transparent;
+        border-top: 35px solid white;
+        border-right: none;
+        border-left: 20px solid transparent;
+        border-bottom: none;
         background-clip: padding-box;
-        padding: 0 10px 10px 10px;
-        transform: rotate(90deg);
     }
 
     /* end baloon tip creation */

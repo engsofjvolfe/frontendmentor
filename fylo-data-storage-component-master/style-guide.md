@@ -36,14 +36,14 @@ The designs were created to the following widths:
 HTML
     <div class="baloon-tip"></div>
 CSS
-    .baloon-tip {
+     .baloon-tip {
         position: absolute;
-        right: 5%;
-        top: 12%;
+        right: 33%;
+        top: 22%;
         background-color: var(--white);
-        border-top: 60px solid var(--white);
-        border-right: 50px solid transparent;
+        border-top: 20px solid white;
+        border-right: none;
+        border-left: 20px solid transparent;
+        border-bottom: none;
         background-clip: padding-box;
-        padding: 0 10px 10px 10px;
-        transform: rotate(90deg);
     }
