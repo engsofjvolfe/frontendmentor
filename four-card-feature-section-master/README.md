@@ -19,6 +19,6 @@ I could use any tools you like to help you complete the challenge. So if you've 
 Your users should:
 
 - See hover and focus states for interactive elements
-- See the page here [Preview-Page]https://jvolfe-four-card-component.netlify.app/)
+- See the page here [Preview-Page](https://jvolfe-four-card-component.netlify.app/)
 
 You can copy this repo, i left all folders and instructions here (except for this readme file, i changed it)
