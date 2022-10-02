@@ -22,6 +22,6 @@ Your users should:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
-- See the page here [Preview-Page](https://3-column-card.netlify.app/)
+- See the page here [Preview-Page](https://jvolfe-3-column-card.netlify.app/)
 
 You can copy this repo, i left all folders and instructions here (except for this readme file, i changed it)
