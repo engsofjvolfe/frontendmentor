@@ -126,6 +126,18 @@ a {
         flex-wrap: wrap;
     }
 
+.card-content{
+    height: 450px;
+}
+
+.card1, .card2, .card3{
+    height: 500px;
+}
+
+.card-content p{
+    width: 90%;
+}
+
     .card1 {
         border-radius: 0.625rem 0 0 0.625rem;
         background: var(--brightOrange);
