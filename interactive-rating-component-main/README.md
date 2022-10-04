@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://github.com/engsofjvolfe/frontendmentor/tree/main/interactive-rating-component-main)
-- Live Site URL: [Site URL](jvolfe-rate-component.netlify.app)
+- Live Site URL: [Site URL](http://jvolfe-rate-component.netlify.app)
 
 ## My process
 
