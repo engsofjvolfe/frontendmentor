@@ -69,6 +69,6 @@ Users should be able to:
 
 ## Author
 
-- Git Hub - [@engsofjvolfe](https://github.com/engsofjvolfem)
+- Git Hub - [@engsofjvolfe](https://github.com/engsofjvolfe)
 - Frontend Mentor - [@engsofjvolfe](https://www.frontendmentor.io/profile/engsofjvolfe)
 - Instagram - [@jeanco_volfe](https://www.instagram.com/jeanco_volfe/)
