@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+/* RATING STATE */
+main {
+    height: auto;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom,
+            rgb(37, 45, 55, 0.6),
+            rgb(37, 45, 55, 0.4));
+    border-radius: 25px;
+    padding: 20px 25px;
+    box-shadow: var(--shadow);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#img-star {
+    width: 40px;
+    background: var(--darkBlue);
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    color: var(--lightGrey);
+}
+
+h1,
+p,
+.points,
+button {
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+h1 {
+    color: var(--white);
+}
+
+p {
+    font-size: 15px;
+    color: var(--mediumGrey);
+    line-height: 1.6;
+    font-weight: 400;
+
+}
+
+.form {
+    width: 100%;
+}
+
+.form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0;
+}
+
+.form__radio-input {
+    display: none;
+}
+
+.form__radio-label {
+    display: block;
+    cursor: pointer;
+    margin-right: 55px;
+    margin-bottom: 50px;
+}
+
+.form__radio-button {
+    height: 50px;
+    width: 50px;
+    background: var(--darkBlue);
+    border-radius: 100%;
+    position: absolute;
+    transition: background-color 0.2s;
+}
+
+/* opacity on click */
+.form__radio-button::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    position: absolute;
+    background-color: var(--mediumGrey);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.form__radio-input:checked~.form__radio-label .form__radio-button::after {
+    opacity: 1;
+}
+
+
+
+/* opacity on click*/
+
+.form__radio-button div {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: var(--white);
+    z-index: 2;
+}
+
+
+.form__radio-button:hover {
+    background: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: var(--orange);
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    color: white;
+    letter-spacing: 3px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.rated {
+    text-align: center;
+}
+
+.rated img,
+.rated .result {
+    margin-bottom: 20px;
+}
+
+.result {
+    display: inline-block;
+    background: var(--orange);
+    padding: 5px 15px;
+    color: var(--white);
+    border-radius: 20px;
+}
+
+/* END RATING STATE */
+
+/* THANK YOU PAGE */
+/* END THANK YOU PAGE */
