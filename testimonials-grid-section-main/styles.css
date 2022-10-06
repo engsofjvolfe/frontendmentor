@@ -22,19 +22,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--lightGrayishBlue);
+}
 
+img {
+    height: auto;
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .quotation-mark {
     position: absolute;
     top: 0;
     right: 0%;
-}
-
-img {
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
+    border-radius: 0;
+    width: 120px;
 }
 
 main {
@@ -45,14 +48,78 @@ main {
     gap: 1rem;
     padding: 15px;
     width: 340px;
-
 }
 
 .individual-card {
+    width: 310px;
     background-color: aqua;
     padding: 30px;
     border-radius: 10px;
     position: relative;
+}
+
+h1,
+h2,
+p {
+    min-width: 100%;
+    position: relative;
+}
+
+h1,
+h2 {
+    color: var(--white);
+}
+
+h2 {
+
+    font-weight: 600;
+}
+
+.card1 {
+    background: var(--moderateViolet);
+}
+
+.card2 {
+    background: var(--veryDarkGrayishBlue);
+}
+
+.card4 {
+    background: var(--veryDarkBlackishBlue);
+}
+
+.card3 h1,
+.card3 h2,
+.card5 h1,
+.card5 h2 {
+    color: var(--veryDarkBlackishBlue)
+}
+
+
+.card1 p,
+.card2 p,
+.card4 p {
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.card1 .testimonial,
+.card2 .testimonial,
+.card4 .testimonial {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card3,
+.card5 {
+    background: var(--white);
+}
+
+.card3 p,
+.card5 p {
+    color: hsla(217, 19%, 35%, 70%);
+}
+
+.card3 .testimonial,
+.card5 .testimonial {
+    color: hsla(217, 19%, 35%, 50%);
 }
 
 .img-name-field {
@@ -63,6 +130,7 @@ article>div>img+div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    ;
 }
 
 .testimonial,
@@ -71,7 +139,7 @@ h2 {
 }
 
 
-@media(min-width:768px) {
+@media(min-width:1100px) {
 
     body {
         height: 100vh;
@@ -82,14 +150,23 @@ h2 {
     }
 
     main {
+        min-width: 1122px;
         width: 100%;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .quotation-mark {
+        right: 8%;
+    }
+
+    .individual-card {
+        width: 100%;
+    }
+
+
 
     .card5 {
         grid-column-start: 4;
         grid-row: 1 / 3;
     }
-
-
 }
