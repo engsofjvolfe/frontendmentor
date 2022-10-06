@@ -1,6 +1,6 @@
 # Frontend Mentor - Testimonials grid section solution
 
-![Design preview for the Testimonials grid section coding challenge](./images/screenshot.png)
+![Design preview for the Testimonials grid section coding challenge](./images/Screnshot.png)
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 The users should be able to:
@@ -42,7 +42,7 @@ Users should be able to:
 - Mobile-first workflow
 
 ### What I learned
-
+ -Grid gaps, template-columns, span, fr
 
 ### Continued development
 
