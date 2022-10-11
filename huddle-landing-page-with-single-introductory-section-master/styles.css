@@ -82,7 +82,6 @@ button:hover {
     display: flex;
     justify-content: center;
     margin-top: 60px;
-
 }
 
 .fa-brands {
@@ -123,5 +122,20 @@ button:hover {
 
     .first-column {
         grid-column: span 2;
+    }
+
+    .container-description {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    p,
+    h1 {
+        text-align: unset;
+    }
+
+    .container-icons {
+        position: absolute;
+        right: 10%;
     }
 }
