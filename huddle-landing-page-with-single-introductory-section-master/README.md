@@ -13,9 +13,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/screenshot.jpg)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/engsofjvolfe/frontendmentor/tree/main/huddle-landing-page-with-single-introductory-section-master)
+- Live Site URL: [Add live site URL here](https://jvolfe-huddle-page.netlify.app/)
 
 ## My process
 
@@ -50,11 +48,6 @@ Users should be able to:
 ### What I learned
 
 ### Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
