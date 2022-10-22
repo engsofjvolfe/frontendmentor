@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+input, button, textarea, select{
+    overflow-wrap: break-word;
+}
+#root, #__next{
+    isolation: isolate;
+}
+
+
 :root {
     --violet: hsl(257, 40%, 49%);
     --softMagenta: hsl(300, 69%, 71%);
@@ -13,6 +40,9 @@ body {
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     padding: 30px;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
 }
 
 h1,
@@ -41,7 +71,6 @@ main {
 .mockup {
     width: 100%;
 }
-
 .logo {
     margin-bottom: 40px;
     max-width: 160px;
@@ -61,7 +90,11 @@ section {
     align-items: center;
 }
 
-button {
+.register {
+    text-decoration: none;
+  align-items: center;
+    display: flex;
+    justify-content: center;
     min-width: 180px;
     height: 35px;
     border-radius: 25px;
@@ -72,7 +105,7 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
+.register:hover {
     cursor: pointer;
     background: var(--softMagenta);
     color: #fff;
