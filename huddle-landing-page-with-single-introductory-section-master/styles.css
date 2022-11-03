@@ -10,19 +10,21 @@
     margin: 0;
 }
 
-html,
-body {
-    height: 100%;
-}
 
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
-input, button, textarea, select{
+
+input,
+button,
+textarea,
+select {
     overflow-wrap: break-word;
 }
-#root, #__next{
+
+#root,
+#__next {
     isolation: isolate;
 }
 
@@ -64,6 +66,7 @@ h1 {
 
 
 main {
+    display: flex;
     height: 100%;
 }
 
@@ -71,13 +74,10 @@ main {
 .mockup {
     width: 100%;
 }
+
 .logo {
     margin-bottom: 40px;
     max-width: 160px;
-}
-
-section {
-    min-width: 300px;
 }
 
 .scnd-column {
@@ -92,7 +92,7 @@ section {
 
 .register {
     text-decoration: none;
-  align-items: center;
+    align-items: center;
     display: flex;
     justify-content: center;
     min-width: 180px;
@@ -114,7 +114,7 @@ section {
 .container-icons {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px 0 40px;
 }
 
 .fa-brands {
@@ -136,39 +136,56 @@ section {
         background: url(images/bg-desktop.svg) no-repeat;
         background-color: var(--violet);
         background-size: cover;
+        overflow: hidden;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
     }
 
     .container-main {
-        width: 90%;
-        margin: 0 auto;
+        max-width: 80%;
         display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        max-width: 1440px;
-    }
+        grid-template-areas:
+            "header header"
+            "first second"
+            "icons icons";
+        grid-template-rows: 20% 1fr 10%;
+        grid-template-columns: 1fr 40%;
 
-    .container-img {
-        display: flex;
-        flex-direction: column;
     }
 
     .first-column {
-        grid-column: span 2;
+        grid-area: first;
+        align-items: center;
+        display: flex;
+    }
+
+    .scnd-column {
+        min-width: 275px;
+        grid-area: second;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
     }
 
     .container-description {
-        display: flex;
         align-items: flex-start;
+        margin-left: 40px;
     }
 
-    p,
+    P,
     h1 {
-        text-align: unset;
+        text-align: start;
     }
 
     .container-icons {
+        grid-area: icons;
         position: absolute;
         right: 10%;
+        bottom: -5%;
     }
+
+
 }
