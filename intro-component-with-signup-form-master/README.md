@@ -1,6 +1,6 @@
 # Frontend Mentor - Intro component with sign up form solution
 
-This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -27,8 +27,8 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Receive an error message when the `form` is submitted if:
-  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
-  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+  - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
 
 ### Screenshot
 
@@ -50,13 +50,13 @@ Users should be able to:
 
 ### What I learned
 
-
 ### Continued development
 
 ### Useful resources
 
 - [Andy Bell CSS Reset](https://gist.github.com/Asjas/4b0736108d56197fce0ec9068145b421)
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Crie Um FORMULÁRIO COMPLETO com HTML, CSS & JavaScript](https://www.youtube.com/watch?v=3Ec9zY1C2og&list=RDLV3Ec9zY1C2og&index=1)
+- [6 things I wish I knew about CSS when I started](https://www.youtube.com/watch?v=U7itlR6qESM&t=132s)
 
 ## Author
 
