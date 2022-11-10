@@ -141,8 +141,8 @@ p {
 
 /* FORM */
 .form {
-    padding: 1.3em 2em;
-    margin-top: 2rem;
+    padding: 2em;
+    margin-top: 1.5rem;
     background-color: white;
 }
 
@@ -153,8 +153,8 @@ p {
 
 input {
     width: 100%;
-    margin: 1em auto;
-    height: 4em;
+    margin-bottom: 1em;
+    height: 3rem;
     border-radius: 0.5em;
     font-weight: 600;
     padding-left: 1em;
@@ -187,9 +187,8 @@ input[type="submit"]:hover {
 }
 
 .form p {
-    margin-top: 1em;
     color: var(--grayishBlue);
-    font-size: 0.85em;
+    font-size: 0.8em;
     line-height: 1.8em;
 }
 
@@ -201,6 +200,9 @@ input[type="submit"]:hover {
 
 @media(min-width:1200px) {
     body {
+        display: flex;
+        justify-content: center;
+        padding: 0 6rem 0;
         background-image: url(images/bg-intro-desktop.png);
     }
 
@@ -208,7 +210,7 @@ input[type="submit"]:hover {
         display: grid;
         grid-template-areas: "container1 container2";
         grid-template-columns: 50% 50%;
-        max-width: 1200px;
+        max-width: 130rem;
     }
 
     .cont1 {
