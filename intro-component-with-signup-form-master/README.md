@@ -29,7 +29,7 @@ Users should be able to:
 - Receive an error message when the `form` is submitted if:
   - Any `input` field is empty. The message for this error should say _"[Field Name] cannot be empty"_
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Looks like this is not an email"_
-  -(I changed this part and instead of message just used icons - red and green)
+    -(I changed this part and instead of message just used icons - red and green)
 
 ### Screenshot
 
@@ -37,8 +37,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/engsofjvolfe/frontendmentor/tree/main/intro-component-with-signup-form-master)
+- Solution URL: [Solution URL here]()
+- Live Site URL: [Live site URL here](https://jvolfe-formpractice.netlify.app/)
 
 ## My process
 
