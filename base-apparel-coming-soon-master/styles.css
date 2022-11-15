@@ -91,7 +91,7 @@ select {
             hsl(0, 74%, 74%));
 }
 
-body {
+body{
     padding: 2em;
 }
 
@@ -101,9 +101,18 @@ p {
     margin-bottom: 2em;
 }
 
+/* FULL WIDTH CONTAINER  */
+.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
 .mobile-img {
     width: 100%;
-
 }
 
 .container-article {
@@ -183,12 +192,14 @@ button {
 }
 
 /* classes FOR JS DOM MANIPULATION */
-.form-control.success input{
+.form-control.success input {
     border-color: green;
 }
-.form-control.error input{
+
+.form-control.error input {
     border-color: red;
 }
+
 .form-control.success i.fa-check-circle {
     color: green;
     visibility: visible;
