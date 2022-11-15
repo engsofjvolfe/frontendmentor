@@ -54,8 +54,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com)
-- [Example resource 2](https://www.example.com)
+- [Imagem de largura total em layout com limite de largura](https://desenvolvimentoparaweb.com/css/imagem-largura-total-layout-largura-limitada/)
+- [Full Width Containers in Limited Width Parents ](https://css-tricks.com/full-width-containers-limited-width-parents/)
 
 ## Author
 

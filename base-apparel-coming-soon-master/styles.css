@@ -90,3 +90,119 @@ select {
             hsl(0, 80%, 86%),
             hsl(0, 74%, 74%));
 }
+
+body {
+    padding: 2em;
+}
+
+.logo,
+.mobile-img,
+p {
+    margin-bottom: 2em;
+}
+
+.mobile-img {
+    width: 100%;
+
+}
+
+.container-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 600;
+    max-width: 240px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 0.6em;
+}
+
+span {
+    font-weight: 300;
+}
+
+span,
+p {
+    color: var(--desaturatedRed);
+}
+
+p {
+    text-align: center;
+}
+
+p,
+form,
+input {
+    width: 100%;
+    max-width: 433px;
+}
+
+form {
+    position: relative;
+}
+
+input,
+button {
+    border-width: 0.01em;
+    height: 2em;
+    border-radius: 1.8em;
+}
+
+input {
+    color: var(--desaturatedRed);
+    padding-left: 1.3em;
+}
+
+i {
+    position: absolute;
+    right: 4.3rem;
+    top: 0.5em;
+}
+
+i,
+small {
+    visibility: hidden;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--linearRed);
+    width: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    box-shadow: 2px 11px 12px -6px rgba(244, 196, 196, 0.66);
+}
+
+/* classes FOR JS DOM MANIPULATION */
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: var(--darkGrayishRed);
+}
+.form-control.success i.fa-check-circle {
+    color: var(--green);
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    color: var(--red);
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: var(--red);
+}
+
+/* RESPONSIVE */
+@media(min-width: 768px) {}
