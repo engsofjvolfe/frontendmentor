@@ -250,6 +250,7 @@ button {
     }
 
     .container-article {
+        margin-top: 3em;
         margin-right: 6em;
         display: flex;
         flex-direction: column;
@@ -264,8 +265,4 @@ button {
     h1 {
         font-size: 48px;
     }
-
-
-
-
 }
