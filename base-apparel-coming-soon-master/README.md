@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
-- Live Site URL: [Live site URL here]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/base-apparel-coming-soon-master)
+- Live Site URL: [Live site URL](https://jvolfe-coming-soon-page.netlify.app/)
 
 ## My process
 
