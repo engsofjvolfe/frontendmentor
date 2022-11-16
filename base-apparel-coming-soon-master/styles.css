@@ -48,12 +48,13 @@ a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img,
+/* 
+Make images easier to work with */
+/* img,
 picture {
     max-width: 100%;
     display: block;
-}
+} */
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -91,8 +92,14 @@ select {
             hsl(0, 74%, 74%));
 }
 
-body{
+body {
     padding: 2em;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-size: cover;
+}
+
+.desktop-img {
+    display: none;
 }
 
 .logo,
@@ -216,4 +223,45 @@ button {
 }
 
 /* RESPONSIVE */
-@media(min-width: 768px) {}
+@media(min-width: 768px) {
+
+    body {
+        margin: 0;
+        padding: 0 2em;
+
+    }
+
+    .mobile-img,
+    .full-width {
+        display: none;
+    }
+
+    .desktop-img {
+        width: 75vh;
+        display: block;
+    }
+
+    section {
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-article {
+        margin-right: 6em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1,
+    p {
+        text-align: start;
+    }
+
+
+
+
+}

@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
- <script
-      src="https://kit.fontawesome.com/590cf50aca.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Frontend Mentor | Base Apparel coming soon page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-  <body>
-    <section>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <script src="https://kit.fontawesome.com/590cf50aca.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <section>
+    <div class="right-side">
       <header>
         <img class="logo" src="images/logo.svg" alt="logo base apparel" />
       </header>
-      <div class="full-width img-container">
-      <picture>
-        <source media="(min-width:768px)" srcset="images/hero-desktop.jpg">
-        <img class="mobile-img"
-          src="images/hero-mobile.jpg"
-          alt="girl putting her hand in near the face"
-        />
-      </picture>
-    </div>
+      <div class="full-width">
+        <img class="mobile-img" src="images/hero-mobile.jpg" alt="girl putting in her hand near the face" />
+      </div>
       <div class="container-article">
         <h1><span>We're</span> coming soon</h1>
         <p>
@@ -42,18 +30,21 @@
         </p>
         <form id="form" action="" method="post">
           <div class="form-control">
-            <input  type="email" name="email" id="email" placeholder="Email Address">
+            <input type="email" name="email" id="email" placeholder="Email Address">
             <i class="fas fa-exclamation-circle"></i>
             <i class="fas fa-check-circle"></i>
             <small>error message</small>
           </div>
-        </input>
-        <button type="submit"><img src="images/icon-arrow.svg" alt="clickable arrow"></button>
+          </input>
+          <button type="submit"><img src="images/icon-arrow.svg" alt="clickable arrow"></button>
         </form>
       </div>
-    </section>
-    
+    </div>
+    <img class="desktop-img" src="images/hero-desktop.jpg" alt="girl 
+        putting in her hand near the face"></div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
