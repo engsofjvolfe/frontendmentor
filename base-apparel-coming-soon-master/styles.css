@@ -241,7 +241,7 @@ button {
         display: block;
     }
 
-    section {
+    .container {
         height: 100vh;
         margin: 0 auto;
         display: flex;
