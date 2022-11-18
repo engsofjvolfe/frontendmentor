@@ -96,6 +96,17 @@ body {
     padding: 2em;
     background-image: url(/images/bg-pattern-desktop.svg);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .desktop-img {
@@ -228,7 +239,6 @@ button {
     body {
         margin: 0;
         padding: 0 2em;
-
     }
 
     .mobile-img,
@@ -241,12 +251,15 @@ button {
         display: block;
     }
 
-    .container {
-        height: 100vh;
-        margin: 0 auto;
+
+
+    header {
         display: flex;
-        justify-content: center;
         align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
     }
 
     .container-article {
@@ -257,12 +270,14 @@ button {
         align-items: flex-start;
     }
 
+    h1 {
+        font-size: 42px;
+    }
+
     h1,
     p {
         text-align: start;
     }
 
-    h1 {
-        font-size: 48px;
-    }
+
 }
