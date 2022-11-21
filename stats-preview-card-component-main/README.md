@@ -25,8 +25,8 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
-
-![](./images/screenshot.jpg)
+![](./images/screenshot1.png)
+![](./images/screenshot.png)
 
 ### Links
 
