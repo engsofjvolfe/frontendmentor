@@ -25,13 +25,14 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
+
 ![](./images/screenshot1.png)
 ![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/stats-preview-card-component-main)
+- Live Site URL: [Live site URL](https://jvolfe-coming-soon-pg.netlify.app/)
 
 ## My process
 
