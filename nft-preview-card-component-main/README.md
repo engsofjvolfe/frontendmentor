@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/nft-preview-card-component-main)
+- Live Site URL: [Site URL here](https://jvolfe-nft-preview-card.netlify.app/)
 
 ## My process
 
