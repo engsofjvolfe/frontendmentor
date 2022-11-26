@@ -195,3 +195,33 @@ span {
     margin-top: 0.625rem;
 }
 
+/*BACKGROUND PATTERNS*/
+/*
+.bg-pattern-top,
+.bg-pattern-bottom {
+    position: absoulute;
+    background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    z-index:-1;
+    width: 40rem;
+    height: 40rem;
+}
+
+@media (max-width:48rem) {
+    .bg-pattern-top {
+        left: 6rem;
+        top: 25rem;
+        transform: rotate(-135deg);
+    }
+
+    .bg-pattern-bottom {
+        left: 475.65px;
+        top: 1106.97px;
+        transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+    }
+}
+
+@media (max-width:48rem) {}
+
+*/
