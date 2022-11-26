@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Site URL here]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/commits/main/profile-card-component-main)
+- Live Site URL: [Site URL here](https://jvolfe-provile-card-component.netlify.app/)
 
 ## My process
 
