@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+/* CSS RESET */
 /* Box sizing rules */
 *,
 *::before,
@@ -34,7 +35,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
+
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -76,7 +77,9 @@ select {
     }
 }
 
-/* START */
+/* CSS RESET ENDING */
+
+/* CSS START */
 :root {
     --softBlue: hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
@@ -100,13 +103,17 @@ body {
     padding: 1.5em;
 }
 
-.avatar-img {
-    width: 30px
-}
 
 header {
+    background-image: url(images/image-equilibrium.jpg);
+    padding-top: calc(100%/(604/604));
+    background-size: 100% 100%;
     border-radius: 1em;
     overflow: hidden;
+}
+
+.header-img {
+    width: 100%;
 }
 
 section {
@@ -150,6 +157,10 @@ p {
 
 hr {
     color: var(--line);
+}
+
+.avatar-img {
+    width: 30px
 }
 
 .container-author {
