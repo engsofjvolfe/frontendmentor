@@ -84,6 +84,7 @@ select {
     --desaturatedBlue: hsl(224, 23%, 55%);
     --darkBlue: hsl(223, 47%, 23%);
 
+
 }
 
 body {
@@ -95,4 +96,10 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    background-color: var(--paleBlue);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    background-position: top;
 }
