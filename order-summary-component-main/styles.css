@@ -136,6 +136,46 @@ p {
 
 h1,
 .container-choose-plan p:nth-of-type(1),
- button, main a:nth-last-of-type(2){
+button,
+main a:nth-last-of-type(2) {
     font-weight: 900;
+}
+
+article>p {
+    margin: 1rem 0.5rem 1rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+}
+
+.container-choose-plan {
+    background-color: var(--veryPaleBlue);
+    padding: 1.313rem 1rem;
+    border-radius: 0.688rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-imgnote-p {
+    display: flex;
+    align-items: center;
+}
+
+.container-imgnote-p>img {
+    margin-right: 1.25rem;
+}
+
+.container-imgnote-p>div>p:nth-of-type(1) {
+    color: unset;
+}
+
+.container-choose-plan>a {
+    height: fit-content;
+    font-weight: 700;
+    font-size: 0.813rem;
+    line-height: 1.063rem;
+    color:var(--brightBlue);
 }
