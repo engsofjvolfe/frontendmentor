@@ -82,6 +82,8 @@ select {
     --brightBlue: hsl(245, 75%, 52%);
     --veryPaleBlue: hsl(225, 100%, 98%);
     --desaturatedBlue: hsl(224, 23%, 55%);
+    --button: #766CF1;
+    --cancel: #717FA6;
     --darkBlue: hsl(223, 47%, 23%);
     --white: #fff;
 
@@ -149,14 +151,21 @@ article>p {
     line-height: 1.563rem;
 }
 
+
+
 .container-choose-plan {
     background-color: var(--veryPaleBlue);
     padding: 1.313rem 1rem;
-    border-radius: 0.688rem;
+    /*borderradius  */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.container-choose-plan,
+button {
+    border-radius: 0.688rem;
 }
 
 .container-imgnote-p {
@@ -177,5 +186,27 @@ article>p {
     font-weight: 700;
     font-size: 0.813rem;
     line-height: 1.063rem;
-    color:var(--brightBlue);
+    color: var(--brightBlue);
+}
+
+button {
+    height: 3.125rem;
+    border: 0;
+    width: 100%;
+    display: block;
+    margin-top: 1.5rem;
+    background-color: var(--brightBlue);
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--button);
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+button>a {
+    color: #fff;
+    text-decoration: none;
 }
