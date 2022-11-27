@@ -92,6 +92,11 @@ select {
 body {
     background-color: var(--mainBG);
     padding: 2em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22em 0;
 }
 
 .container {
