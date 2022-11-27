@@ -42,7 +42,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://jvolfe-order-summary-component.netlify.app/)
 - Live Site URL: [Site URL here](https://jvolfe-order-summary-component.netlify.app/)
 
 ## My process

@@ -189,11 +189,13 @@ button {
     color: var(--brightBlue);
 }
 
-button {
+.payment {
     height: 3.125rem;
     border: 0;
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 1.5rem;
     background-color: var(--brightBlue);
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
@@ -201,17 +203,17 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.payment:hover {
     background: var(--button);
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
 
-button>a,
+.payment,
 main>a:last-child {
     text-decoration: none;
 }
 
-button>a {
+.payment {
     color: #fff;
     /* text-decoration: none; */
 }
