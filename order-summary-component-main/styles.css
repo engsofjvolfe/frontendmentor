@@ -91,7 +91,9 @@ select {
 }
 
 body {
+    padding: 20rem 0rem;
     margin: 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,12 +107,15 @@ body {
 }
 
 .container {
-    overflow: hidden;
     margin: 4.438rem 1.5rem;
     width: 20.438rem;
     box-shadow: 0px 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
     border-radius: 1.25rem;
     background-color: var(--white);
+}
+
+header img {
+    border-radius: 1.25rem 1.25rem 0 0;
 }
 
 main {
@@ -226,6 +231,6 @@ main>a:last-child {
     /* text-decoration: none; */
 }
 
-main>a:last-child:hover{
+main>a:last-child:hover {
     color: unset;
 }
