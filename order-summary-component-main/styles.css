@@ -89,14 +89,11 @@ select {
 }
 
 body {
-    position: relative;
     margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
     background-color: var(--paleBlue);
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
@@ -107,10 +104,38 @@ body {
 
 .container {
     overflow: hidden;
-    margin:4.438rem 1.5rem;
+    margin: 4.438rem 1.5rem;
     width: 20.438rem;
-    height: 35.438rem;
     box-shadow: 0px 2.5rem 2.5rem -1.25rem rgba(13, 48, 189, 0.151826);
     border-radius: 1.25rem;
     background-color: var(--white);
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+h1,
+p {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1 {
+    font-style: normal;
+    font-size: 1.375rem;
+    line-height: 1.813rem;
+}
+
+p {
+    font-weight: 500;
+    color: var(--desaturatedBlue);
+}
+
+h1,
+.container-choose-plan p:nth-of-type(1),
+ button, main a:nth-last-of-type(2){
+    font-weight: 900;
 }
