@@ -90,22 +90,24 @@ select {
 body {
     padding: 20rem 0rem;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 5.0625rem 2.25rem 2.25rem 2.25rem;
+    padding: 5rem 2.25rem;
 }
 
 .container {
     width: 100%;
+    height: 100vh;
     max-width: 44.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .header {
     width: 100%;
@@ -147,12 +149,15 @@ h1,
 }
 
 .form-control {
+    width:17.5625rem;
     position: relative;
     display: flex;
     flex-direction: column;
+    /* FLEX WRAP? */
 }
 
 input {
+    width: 20rem;
     border: 1px solid var(--paleBlue);
     box-shadow: 0 0 0.4375rem 0.1875rem rgba(0, 0, 0, 0.0001);
     border-radius: 1.75rem;
@@ -182,6 +187,7 @@ small {
 }
 
 button {
+    font-family:'Libre Franklin', sans-serif ;
     cursor: pointer;
     width: 100%;
     height: 2.5rem;
@@ -191,4 +197,31 @@ button {
     color: var(--white);
     margin-top: 0.625rem;
     margin-bottom: 2.5rem;
+}
+
+.dashboard {
+    margin-bottom: 7.5rem;
+    width: 320px;
+    height:192px;
+    background-image: url(images/illustration-dashboard.png);
+    
+}
+
+footer {
+    width: 10.625rem;
+    max-width: 17.75rem;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.6875rem;
+}
+
+.rights {
+font-style: normal;
+    font-weight: 300;
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+color: var(--gray);
 }
