@@ -94,4 +94,14 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding: 5.0625rem 2.25rem 2.25rem 2.25rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
