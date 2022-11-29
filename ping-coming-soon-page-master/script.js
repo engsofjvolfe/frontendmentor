@@ -1,25 +1,28 @@
 const form = document.querySelector('#form');
 const email = document.querySelector('#email');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkInputs();
 });
 
 function checkInputs() {
-    const emailValue = email.value;
+    const emailValue = email.value.trim();
     if (emailValue === "") {
+        console.log("campo vazio")
         setErrorFor(email, "Plase provide a valid email address");
     } else if (!checkEmail(emailValue)) {
+        console.log("Enaikl inválido");
         setErrorFor(email, "Plase provide a valid email address");
     } else {
+        console.log("Sucesso");
         setSuccessFor(email);
     }
 }
 
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
-    const small = formcontrol.QuerySelector('small');
+    const small = formControl.querySelector('small');
     formControl.className = "form-control error";
     small.innerText = message;
 }

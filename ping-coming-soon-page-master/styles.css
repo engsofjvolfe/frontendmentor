@@ -85,6 +85,7 @@ select {
     --gray: hsl(0, 0%, 59%);
     --veryDarkBlue: hsl(209, 33%, 12%);
     --white: #fff;
+    --green: rgb(132, 204, 132);
 }
 
 body {
@@ -190,6 +191,7 @@ input::placeholder {
 }
 
 small {
+    width: 100%;
     text-align: center;
     margin-bottom: 0.625rem;
     font-weight: 400;
@@ -218,6 +220,11 @@ input[type="submit"] {
     margin-bottom: 2.5rem;
     box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
 }
+
+.btn {
+    width: 100%;
+}
+
 
 input[type="submit"]:hover {
     opacity: 0.7;
@@ -281,13 +288,14 @@ footer {
     }
 
     form {
+        display: flex;
         width: 39.8125rem;
         /* display: flex; */
         margin-bottom: 4.25rem;
     }
 
     .form-control {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     input {
