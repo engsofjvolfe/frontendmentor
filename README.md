@@ -6,4 +6,4 @@ Here it is... Just front end design practice. I just try to recreate the example
 <br>
 <a href="https://www.frontendmentor.io/home">FRONTENDMENTOR</a>
 <br>
-I use the free version for studying
+I use the free version for studying (recently 28/11/22 i have been trying premium version)
