@@ -1,6 +1,6 @@
-# Frontend Mentor - Ping coming soon page solution
+# Frontend Mentor - Pod request access landing page solution
 
-This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Pod request access landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/pod-request-access-landing-page-eyTmdkLSG). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -15,11 +15,14 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 ### The challenge
 
 Users should be able to:
+View the optimal layout depending on size of the screen
+View an error message while submiting empty fields or invalid email address
 
 ### Screenshot
 
-![](./images/mobileScreenshot.png)
-![](./images/desktopScreenshot.png)
+![](./assets/screenshotMobile.png)
+![](./assets/screenshotTablet.png)
+![](./assets/screenshotDesktop.png)
 
 ### Links
 
