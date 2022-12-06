@@ -335,6 +335,7 @@ input:nth-of-type(2) {
     }
 
     .medias>ul {
+        width: 536px;
         margin-top: 64px;
     }
 

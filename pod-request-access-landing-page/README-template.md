@@ -15,8 +15,8 @@ This is a solution to the [Pod request access landing page challenge on Frontend
 ### The challenge
 
 Users should be able to:
-View the optimal layout depending on size of the screen
-View an error message while submiting empty fields or invalid email address
+- View the optimal layout depending on size of the screen
+- View an error message while submiting empty fields or invalid email address
 
 ### Screenshot
 
