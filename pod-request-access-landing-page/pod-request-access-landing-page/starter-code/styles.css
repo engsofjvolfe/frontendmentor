@@ -100,126 +100,52 @@ body {
 }
 
 .container {
-    margin: 0 1.5rem;
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
 }
 
+/* header mobile */
 header {
-    position: absolute;
-    width: 134.85px;
-    left: 120px;
-    top: 62px;
+    width: 100%;
+    margin-top: 62px;
+    display: flex;
+    justify-content: center;
 }
 
-/* header tablet definitions */
-@media screen and (min-width:48rem) {
+.container-header {
+    width: 65.65px;
+}
+
+/* header tablet */
+@media screen and (min-width:768px) {
     header {
-        position: absolute;
-        left: 39px;
-        top: 50px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        padding-left: 39px;
+    }
+
+    .container-header {
+        width: 134.85px;
     }
 }
 
-/*header desktop definitions */
-@media screen and (min-width:62rem) {
-    header {
-        left: 165px;
-        top: 102px;
-    }
-}
-
-/* main definitions */
-main {
-    min-width: 20.4375rem;
-    max-width: 45.1875rem;
-    color: white;
-    text-align: center;
-}
-
-article>h1 {
-    font-weight: 400;
-    font-size: 1.625rem;
-    color: var(--white);
-    text-transform: uppercase;
-    line-height: 2.375rem;
-}
-
-article>h1>span {
-    color: var(--primaryGreen);
-}
-
-article>p {
-    font-size: 0.9375rem;
-    margin-top: 1rem;
-    max-width: 27.8125rem;
-    color: var(--lightGrey);
-    line-height: 1.5625rem;
-}
-
-
-/* main tablet definitions */
-@media screen and (min-width:48rem) {
-    picture {
-        position: absolute;
-        width: 491px;
-        height: 767px;
-        left: 277px;
-        top: 0px;
-    }
-
-    main {
-        padding-top: 93px;
-        position: absolute;
-        width: 635px;
-        height: 509px;
-        left: 39px;
-        top: 258px;
-        text-align: start;
-    }
-
-    article>h1 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 56px;
-    }
-
-    article>p {
-        margin-top: 31px;
-        font-size: 0.9375rem;
-        font-size: 18px;
-        line-height: 28px;
-    }
-}
-
-/* main desktop definitions */
+/* header desktop */
 @media screen and (min-width:992px) {
-    picture {
-        position: absolute;
-        width: 888px;
-        height: 640px;
-        left: 552px;
-        top: 130px;
+    header {
+        display: block;
+        width: 100%;
+        margin-top: 102px;
+        padding-left: 165px;
     }
 
-    main {
-        padding-top: 88px;
-        position: absolute;
-        width: 723px;
-        height: 509px;
-        left: 165px;
-        top: 261px;
-    }
-
-    article>h1 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 52px;
-        line-height: 62px;
-    }
-
-    article>p {
-        margin-top: 24px;
-        font-size: 18px;
-        line-height: 28px;
+    .container-header {
+        width: 134.85px;
     }
 }
+
+/* main mobile */
+
+/* main tablet */
+/* main desktop */
