@@ -223,3 +223,123 @@ article>p {
         line-height: 28px;
     }
 }
+
+/* mobile forms - indicated medias */
+/* mobile indicated medias */
+.container-forms-medias {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.medias>ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.medias>ul>li {
+    width: 55.94px;
+    color: var(--mediumGrey);
+    display: flex;
+    align-items: center;
+}
+
+/*mobile form */
+.container-form {
+    margin-top: 48px;
+}
+
+.form-control {
+    display: grid;
+    position: relative;
+}
+
+small {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 35px;
+    margin-top: 8px;
+}
+
+input::placeholder {
+    color: var(--white);
+}
+
+input::placeholder,
+input:nth-of-type(2) {
+    margin-top: 33px;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+input:nth-of-type(1),
+input:nth-of-type(2) {
+    border: unset;
+    font-size: 14px;
+    border-radius: 28px;
+    padding: 9px 0 9px 0;
+}
+
+input:nth-of-type(1) {
+    background-color: var(--darkGrey);
+    padding-left: 32px;
+}
+
+input:nth-of-type(2) {
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--dark);
+    background-color: var(--primaryGreen);
+}
+
+/* input:nth-of-type(2){
+    background-color: #b3ffe2;
+} */
+
+/* tablet forms - indicated medias */
+/* tablet indicated medias  */
+@media screen and (min-width:768px) {
+    .container-forms-medias {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .medias>ul {
+        margin-top: 64px;
+    }
+
+    .medias>ul>li {
+        width: 78px;
+        color: var(--mediumGrey);
+    }
+
+    /*tablet form */
+    .container-form {
+        margin-top: 0;
+        width: 427px;
+        position: relative;
+    }
+
+    input:nth-of-type(1) {
+        width: 427px;
+        padding: 14px 0 14px 32px;
+    }
+
+    input:nth-of-type(2) {
+        margin-top: 0;
+        width: 162px;
+        bottom: 1.3px;
+        right: 0;
+        position: absolute;
+    }
+
+    small {
+        top: 45px;
+        left: 30px;
+    }
+}
