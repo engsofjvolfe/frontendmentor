@@ -87,7 +87,7 @@ select {
     --lightGrey: #C2CBE5;
     --dark: #121725;
     --white: #fff;
-    --red:##FB3E3E;
+    --redError: #FB3E3E;
 }
 
 body {
@@ -281,7 +281,7 @@ article>p {
 }
 
 small {
-    display: none;
+    visibility: hidden;
     width: 100%;
     position: absolute;
     top: 35px;
@@ -368,7 +368,6 @@ input:nth-of-type(2) {
         left: 30px;
         font-size: 12px;
         line-height: 14px;
-        color: var(--red);
     }
 }
 
@@ -388,4 +387,15 @@ input:nth-of-type(2) {
         background-image: url(assets/desktop/image-host.jpg);
         max-width: 1275px;
     }
+}
+
+/* form control error */
+.form-control.error small {
+    visibility: visible;
+    color: var(--redError);
+}
+
+/* form control success */
+.form-control.success input {
+    border: 2px solid var(--primaryGreen)
 }
