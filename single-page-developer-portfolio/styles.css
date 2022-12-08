@@ -94,4 +94,140 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: var(--black);
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+}
+
+/* MOBILE HEADER - HERO */
+.container-body {
+    position: relative;
+}
+
+header {
+    /* 18px */
+    margin-top: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 4923px */
+    margin-bottom: 20.8125rem;
+
+}
+
+.logo {
+    /* 129px */
+    width: 7.875rem;
+    /* 20px */
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    /* 24px */
+    font-size: 1.5rem;
+    /* 32px */
+    line-height: 2rem;
+    /* 0.333333px */
+    letter-spacing: -0..208rem;
+    color: #FFFFFF;
+}
+
+.socials {
+    /* 153.99px */
+    width: 9.6244rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials img {
+    /* 18.62px */
+    width: 1.1638rem;
+}
+
+/* HERO */
+/* TAG picture */
+.author-photo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+picture {
+    /* 174px */
+    width: 10.875rem;
+}
+
+/* HERO TEXTS */
+.hero-section {
+    /* 16px */
+    padding: 0 1rem;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* 343px */
+    text-align: center;
+    width: 100%;
+    max-width: 21.4375rem;
+    margin: 0 auto;
+    color: var(--white);
+}
+
+.hero-content>h1 {
+    /* 40px */
+    font-size: 2.5rem;
+    /* 40px */
+    line-height: 2.5rem;
+    /* -1.13636px */
+    letter-spacing: -0.071rem;
+}
+
+.hero-content>h1>span {
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+
+.hero-content>p {
+    /* 20px */
+    margin-top: 1.25rem;
+    font-weight: 500;
+    /* 16px */
+    font-size: 16px;
+    /* 26px */
+    line-height: 1.625rem;
+    color: var(--gray);
+    /* 24px */
+    margin-bottom: 1.5rem;
+}
+
+.hero-content>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* 16px */
+    font-size: 1rem;
+    /* 26px */
+    line-height: 1.625rem;
+    /* 2.28571px */
+    letter-spacing: 0.1429rem;
+    color: var(--white);
+}
+
+.a-underline {
+    /* 120px */
+    width: 7.5rem;
+    /* 10px */
+    margin-top: 0.625rem;
+    /* 2px */
+    border-bottom: 0.125rem solid var(--green);
+}
+
+.hero-underline {
+    /* 80px */
+    margin-top: 5rem;
+    /* 343px */
+    width: 21.4375rem;
+    border: 0.0625rem solid var(--white);
 }
