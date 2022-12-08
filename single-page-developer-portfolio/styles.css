@@ -104,6 +104,30 @@ body {
     position: relative;
 }
 
+.bg-right {
+    /* 530px */
+    width: 33.125rem;
+    /* 129px */
+    height: 8.0625rem;
+    position: absolute;
+    /* -336px */
+    left: -21rem;
+    /* 117px */
+    top: 7.3125rem;
+}
+
+.bg-left {
+    position: absolute;
+    /* 129px */
+    width: 8.0625rem;
+    /* 129px */
+    height: 8.0625rem;
+    /* 254px */
+    top: 15.875rem;
+    /* 84px */
+    right: -5.25rem;
+}
+
 header {
     /* 18px */
     margin-top: 1.125rem;
