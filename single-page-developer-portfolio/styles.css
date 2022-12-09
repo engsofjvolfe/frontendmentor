@@ -82,9 +82,9 @@ select {
 /* CSS START */
 :root {
     --black: #151515;
-    --darkGray: #242424;
+    --darkgrey: #242424;
     --green: #4EE1A0;
-    --gray: #D9D9D9;
+    --grey: #D9D9D9;
     --white: #fff;
 }
 
@@ -137,11 +137,11 @@ body {
 header {
     /* 18px */
     margin-top: 1.125rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
     /* 4923px */
     margin-bottom: 20.8125rem;
 
@@ -230,7 +230,7 @@ picture {
     font-size: 16px;
     /* 26px */
     line-height: 1.625rem;
-    color: var(--gray);
+    color: var(--grey);
     /* 24px */
     margin-bottom: 1.5rem;
 }
@@ -257,13 +257,15 @@ picture {
     border-bottom: 0.125rem solid var(--green);
 }
 
-.hero-underline-outside {
+.hero-underline-outside,
+.skill-underline-outside {
     width: 100;
     display: flex;
     justify-content: center;
 }
 
-.hero-underline {
+.hero-underline,
+.skill-underline {
     /* 80px */
     margin-top: 5rem;
     /* 343px */
@@ -400,7 +402,7 @@ picture {
         font-size: 1.125rem;
         /* 28px */
         line-height: 1.75rem;
-        color: var(--gray);
+        color: var(--grey);
         /* 34px */
         margin-bottom: 2.125rem;
     }
@@ -554,7 +556,7 @@ picture {
         font-size: 1.125rem;
         /* 28px */
         line-height: 1.75rem;
-        color: var(--gray);
+        color: var(--grey);
         /* 66px */
         margin-bottom: 4.125rem;
     }
@@ -592,5 +594,48 @@ picture {
         /* 1px */
         border: 0.0625rem solid var(--white);
     }
-
 }
+
+/* MOBILE SKILLS SECTION */
+#skils {
+    /* 345px */
+    max-width: 21.5625rem;
+}
+
+.container-skills {
+    text-align: center;
+}
+
+.skill-item {
+    /* 40px */
+    margin: 2.5rem 0 0;
+}
+
+.skill-item>h1 {
+    /* 32px */
+    font-size: 2rem;
+    /* 40px  */
+    line-height: 2.5rem;
+    /* -1px */
+    letter-spacing: -0.0625rem;
+    /* 1px */
+    margin-bottom: 0.0625rem;
+    color: var(--white);
+}
+
+.skill-item>p {
+    font-weight: 500;
+    /* 16px */
+    font-size: 1rem;
+    /* 26px */
+    line-height: 1.625rem;
+    color: var(--grey)
+}
+
+.skill-underline {
+    margin-top: 2.5rem;
+}
+
+
+/* TABLET SKILLS SECTION */
+/* DESKTOP SKILLS SECTION */
