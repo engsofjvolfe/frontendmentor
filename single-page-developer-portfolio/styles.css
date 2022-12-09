@@ -259,9 +259,9 @@ picture {
 
 .hero-underline-outside,
 .skill-underline-outside {
-    width: 100;
     display: flex;
     justify-content: center;
+    width: 100;
 }
 
 .hero-underline,
@@ -427,6 +427,10 @@ picture {
         margin-top: 0.625rem;
         /* 2px */
         border-bottom: 0.125rem solid var(--green);
+    }
+
+    .hero-underline-outside {
+        display: block;
     }
 
     .hero-underline {
@@ -604,11 +608,14 @@ picture {
 
 .container-skills {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .skill-item {
-    /* 40px */
-    margin: 2.5rem 0 0;
+    /* 40px  30px*/
+    margin: 2.5rem 1.875rem;
 }
 
 .skill-item>h1 {
@@ -638,4 +645,49 @@ picture {
 
 
 /* TABLET SKILLS SECTION */
+@media screen and (min-width:48rem) {
+    #skils {
+        /* 708px */
+        max-width: 44.25rem;
+    }
+
+    .container-skills {
+        text-align: start;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .skill-item {
+        /* 52px  7px*/
+        margin: 3.25rem 0.4375rem 0 0;
+    }
+
+    .skill-item>h1 {
+        /* 48px */
+        font-size: 3rem;
+        /* 56px  */
+        line-height: 3.5rem;
+        /* -1.5px */
+        letter-spacing: -0.0938rem;
+        /* 14px */
+        margin-bottom: 0.875rem;
+        color: var(--white);
+    }
+
+    .skill-item>p {
+        font-weight: 500;
+        /* 18px */
+        font-size: 1.125rem;
+        /* 28px */
+        line-height: 1.75rem;
+        color: var(--grey)
+    }
+
+    .skill-underline {
+        display: none;
+    }
+}
+
 /* DESKTOP SKILLS SECTION */
