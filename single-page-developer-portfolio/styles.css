@@ -90,6 +90,8 @@ select {
 
 body {
     /*  */
+    width: 100vw;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,6 +104,8 @@ body {
 /* MOBILE HEADER - HERO */
 .container-body {
     position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .bg-right {
@@ -194,6 +198,7 @@ picture {
     /* 343px */
     text-align: center;
     width: 100%;
+    /* 706px */
     max-width: 21.4375rem;
     margin: 0 auto;
     color: var(--white);
@@ -208,7 +213,7 @@ picture {
     letter-spacing: -0.071rem;
 }
 
-.hero-content>h1>span {
+.hero-content>h1>.h1-author-name {
     text-decoration: underline;
     text-decoration-color: var(--green);
 }
@@ -254,4 +259,166 @@ picture {
     /* 343px */
     width: 21.4375rem;
     border: 0.0625rem solid var(--white);
+}
+
+.bg-right-rings,
+.bg-down-left-ring {
+    display: none;
+}
+
+@media screen and (min-width:48rem) {
+    .container-body {
+        /* 708px */
+        width: 44.25rem;
+        /* 1110px */
+        max-width: 69.375rem;
+    }
+
+    .bg-right {
+        /* 530px */
+        width: 33.125rem;
+        /* 129px */
+        height: 8.0625rem;
+        position: absolute;
+        left: -16.9rem;
+        top: 4.3rem;
+    }
+
+    .bg-left {
+        position: absolute;
+        /* 129px */
+        width: 8.0625rem;
+        /* 129px */
+        height: 8.0625rem;
+        top: 28.9rem;
+        right: -4.3rem;
+    }
+
+    /* MOBILE HEADER - HERO */
+    header {
+        /* 599px */
+        margin-bottom: 37.4975rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* 4923px */
+    }
+
+    .logo {
+        /* 172px */
+        width: 10.75rem;
+        /* 32px */
+        font-size: 2rem;
+        /* 32px */
+        line-height: 2rem;
+        /* 0.444444px */
+        letter-spacing: -0.0278rem;
+        color: #FFFFFF;
+    }
+
+    .socials {
+        /* 192.49px */
+        width: 12.0288rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .socials img {
+        /* 24.61px */
+        width: 1.5381rem;
+    }
+
+    /* HERO */
+    /* TAG picture */
+    .author-photo {
+        width: fit-content;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    picture {
+        /* 322px */
+        width: 20.125rem;
+        z-index: -1;
+    }
+
+    /* HERO TEXTS */
+    .hero-content {
+        position: absolute;
+        padding: 0;
+        /* 28px */
+        left: 0;
+        /* 184px */
+        top: 10.5rem;
+        text-align: start;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 445px */
+        max-width: 27.125rem;
+    }
+
+    .hero-content>h1 {
+        display: block;
+        /* 72px */
+        font-size: 4.5rem;
+        /* 72px */
+        line-height: 4.5rem;
+        /* -2.04545px */
+        letter-spacing: -0.1278rem;
+    }
+
+    .hero-content>h1>span:nth-of-type(1),
+    .hero-content>h1>span:nth-of-type(2) {
+        display: block;
+    }
+
+    .hero-content>h1>span:nth-of-type(2),
+    .hero-content>p {
+        width: 445px;
+    }
+
+    .hero-content>p {
+        /* 60px */
+        margin-top: 3.75rem;
+        /* 18px */
+        font-size: 1.125rem;
+        /* 28px */
+        line-height: 1.75rem;
+        color: var(--gray);
+        /* 34px */
+        margin-bottom: 2.125rem;
+    }
+
+    .hero-content>a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        /* 16px */
+        font-size: 1rem;
+        /* 26px */
+        line-height: 1.625rem;
+        /* 2.28571px */
+        letter-spacing: 0.1429rem;
+        color: var(--white);
+    }
+
+    .a-underline {
+        /* 120px */
+        width: 7.5rem;
+        /* 10px */
+        margin-top: 0.625rem;
+        /* 2px */
+        border-bottom: 0.125rem solid var(--green);
+    }
+
+    .hero-underline {
+        /* 60px */
+        margin-top: 3.75rem;
+        /* 706px */
+        width: 44.125rem;
+        /* 1px */
+        border: 0.0625rem solid var(--white);
+    }
+
 }
