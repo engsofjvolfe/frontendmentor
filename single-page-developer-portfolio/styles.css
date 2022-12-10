@@ -646,12 +646,19 @@ picture {
 
 /* TABLET SKILLS SECTION */
 @media screen and (min-width:48rem) {
+    body {
+        background-image: url(images/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position: 600px 1050px;
+    }
+
     #skills {
-        /* 708px */
-        max-width: 44.25rem;
+        width: 100vw;
     }
 
     .container-skills {
+        /* 708px */
+        max-width: 44.25rem;
         text-align: start;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -692,6 +699,12 @@ picture {
 
 /* DESKTOP SKILLS SECTION */
 @media screen and (min-width:62rem) {
+    body {
+        background-image: url(images/pattern-rings.svg);
+        background-repeat: no-repeat;
+        background-position: 950px 1100px;
+    }
+
     #skills {
         /* 1110PX */
         max-width: 69.375rem;
@@ -705,11 +718,11 @@ picture {
         justify-content: flex-start;
     }
 
-
-    .skill-item{
-        /* 0 30px  58px*/
-        margin: 0 1.875rem 3.625rem;
+    .skill-item {
+        /* 0 35px  58px*/
+        margin: 0 2.1875rem 3.625rem;
     }
+
     .skill-item>h1 {
         /* 48px */
         font-size: 3rem;
