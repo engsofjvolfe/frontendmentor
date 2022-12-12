@@ -800,12 +800,15 @@ picture {
 .items-project-container {
     width: 100%;
     display: flex;
+    grid-template-columns: 50% 50%;
     flex-direction: column;
-   
+    flex-wrap: wrap;
+    align-items: center;
+
 }
 
 .item-project {
-    width: 100%;
+    max-width: 554.81px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -853,7 +856,119 @@ picture {
 }
 
 
-/* TABLET PROJECTS SECTION */
+/* TABLET SECTION  */
+@media screen and (min-width:48rem) {
+    #projects {
+        /* 100px */
+        margin-top: 6.25rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--white);
+        padding: 0 16px;
+    }
 
+    .container-projects {
+        width: 100%;
+        /* 343px */
+        /* max-width: 21.4375rem;*/
+        margin: 0 auto;
+    }
+
+    .projects-title {
+        /* 343px */
+        min-width: 21.4375rem;
+        /* 1110px */
+        max-width: 69.375rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        /* 40px */
+        margin-bottom: 2.5rem;
+    }
+
+    .container-projects-title-a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .projects-title h1 {
+        /* 40px */
+        font-size: 2.5rem;
+        /* 40px */
+        line-height: 2.5rem;
+        /* -1.13636px */
+        letter-spacing: -0.071rem;
+        /* 40px */
+        margin-bottom: 2.5rem;
+    }
+
+    .projects-title .a {
+        margin: 0;
+    }
+
+    .items-project-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        /* 22px */
+        column-gap: 1.375rem;
+    }
+
+    .item-project {
+        max-width: 554.81px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 60px */
+        margin-bottom: 3.75rem;
+    }
+
+    .item-project>picture {
+        width: 100%;
+        /* 20px */
+        margin-bottom: 1.25rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-project>h2 {
+        text-transform: uppercase;
+        /* 24px */
+        font-size: 1.5rem;
+        /* 32px */
+        line-height: 2rem;
+        /* 7px */
+        margin-bottom: 0.4375rem;
+    }
+
+    .text-project>p {
+        font-weight: 500;
+        /* 18px */
+        font-size: 1.125rem;
+        /* 28px */
+        line-height: 1.75rem;
+        color: var(--grey);
+        /* 20px */
+        margin-bottom: 1.25rem;
+    }
+
+    .text-project>p>span {
+        /* 18px */
+        margin: 0 1.125rem;
+    }
+
+    .links-project>a:nth-of-type(1) {
+        /* 32rem */
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width:62rem) {}
 
 /* DESKTOP PROJECTS SECTION */
