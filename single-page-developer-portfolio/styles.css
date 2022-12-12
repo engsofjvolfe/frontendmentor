@@ -35,7 +35,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -180,6 +179,7 @@ header {
     width: 100%;
     position: absolute;
     top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
 }
@@ -348,16 +348,14 @@ picture {
     /* HERO */
     /* TAG picture */
     .author-photo {
-        width: fit-content;
+        width: 100%;
         position: absolute;
-        top: 0;
-        right: 0;
+        justify-content: flex-end;
     }
 
     picture {
         /* 322px */
         width: 20.125rem;
-        z-index: -1;
     }
 
     /* HERO TEXTS */
@@ -508,16 +506,9 @@ picture {
 
     /* HERO */
     /* TAG picture */
-    .author-photo {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
     picture {
         /* 445px */
         width: 27.8125rem;
-        z-index: -1;
     }
 
     /* HERO TEXTS */
@@ -642,7 +633,6 @@ picture {
 .skill-underline {
     margin-top: 2.5rem;
 }
-
 
 /* TABLET SKILLS SECTION */
 @media screen and (min-width:48rem) {
