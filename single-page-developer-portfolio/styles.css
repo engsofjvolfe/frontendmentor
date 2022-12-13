@@ -1170,15 +1170,74 @@ textarea {
   letter-spacing: 0.1429rem;
   /* 87px */
   margin-bottom: 5.4375rem;
+  cursor: pointer;
 }
 
 .contact-underline {
   width: 100%;
 }
 
-
-
-
-
 /* TABLET CONTACT */
+@media screen and (min-width: 48rem) {
+  #contact {
+    /* 160px */
+    margin-top: 8.75rem;
+  }
+
+  .contact-text>h1 {
+    /* 72px */
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    /* -2.04545px */
+    letter-spacing: -0.1278rem;
+  }
+}
+
 /* DESKTOP CONTACT */
+@media screen and (min-width: 62rem) {
+  #contact {
+    /* 223px */
+    margin-top: 13.9375rem;
+    /* 1110px */
+    max-width: 69.375rem;
+  }
+
+  .container-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-text {
+    /* 445px */
+    width: 27.8115rem;
+  }
+
+  .contact-text>h1,
+  .contact-text>p {
+    text-align: left;
+  }
+
+  .contact-text>h1 {
+    /* 88px */
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    /* -2.5px */
+    letter-spacing: -0.1563rem;
+  }
+
+  .contact-text>p {
+    /* 36px */
+    margin-top: 2.25rem;
+    /* 18px */
+    font-size: 1.125rem;
+    /* 28px */
+    line-height: 1.75rem;
+    color: var(--grey);
+  }
+
+  #form {
+    margin: 0;
+    /* 445PX */
+    width: 27.125rem;
+  }
+}    
