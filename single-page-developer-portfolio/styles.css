@@ -132,7 +132,7 @@ body {
   right: -5.25rem;
 }
 
-header {
+header, footer {
   /* 18px */
   margin-top: 1.125rem;
   display: flex;
@@ -317,7 +317,7 @@ picture {
   }
 
   /* TABLET HEADER - HERO */
-  header {
+  header, footer {
     /* 599px */
     margin-bottom: 37.4975rem;
     display: flex;
@@ -476,7 +476,7 @@ picture {
   }
 
   /* DESKTOP HEADER - HERO */
-  header {
+  header, footer {
     /* 753px */
     margin-bottom: 47.0625rem;
     display: flex;
@@ -1240,4 +1240,9 @@ textarea {
     /* 445PX */
     width: 27.125rem;
   }
-}    
+}   
+
+/* FOOTER SOCIALS */
+.footer-socials{
+  margin: 40px 0 40px;
+}
