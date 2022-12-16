@@ -1,7 +1,10 @@
-(function () {
+; (function () {
     'strict mode'
-    const form = document.querySelector('#form');
-    const email = document.querySelector('#email');
+    const form = document.querySelector('#form')
+    const email = document.querySelector('#email')
+    const name = document.querySelector('#name')
+    const message = document.querySelector('#message')
+    const formControl = document.querySelectorAll('#form .form-control')
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -9,42 +12,38 @@
     })
 
     function checkInputs() {
-        const emailValue = email.value.trim();
+        const emailValue = email.value.trim().toLowerCase()
 
         if (emailValue === '') {
             // mostrar erro
             // add classe
-            setErrorFor(email, 'Empty Field');
+            setErrorFor('Empty Field')
+            email.focus()
         } else if (!checkEmail(emailValue)) {
-            setErrorFor(email, 'Sorry, invalid format here');
+            setErrorFor('Sorry, invalid format')
+            email.focus()
         } else {
             // adicionar a classe de sucesso
-            let name = document.querySelector('#name');
-            let message = document.querySelector('#message');
-            setSuccessFor(email, name, message);
+            setSuccessFor()
         }
     }
 
-    function setErrorFor(email, message) {
-        const formControl = email.parentElement;
-        const small = formControl.querySelector('small')
-        formControl.className = 'form-control error'
+    function setErrorFor(message) {
+        const small = formControl[1].querySelector('small')
+        formControl[1].className = 'form-control error'
         small.innerText = message
+        console.log('error')
     }
 
-    function setSuccessFor(email, name, message) {
-        const formControl = email.parentElement;
-        const formControlName = name.parentElement;
-        const formControlMessage = message.parentElement;
-        formControl.className = 'form-control success'
-        formControlName.className = 'form-control success'
-        formControlMessage.className = 'form-control success'
+    function setSuccessFor() {
+        for (let i = 0; i <= 2; i++) {
+            formControl[i].className = 'form-control success'
+        }
     }
 
     // REGEX
     function checkEmail(email) {
-        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-            email
-        )
+        let re = /\S+@\S+\.\S+/;
+        return re.test(email);
     }
 })()
