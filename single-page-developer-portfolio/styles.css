@@ -677,11 +677,11 @@ picture {
 
 /* TABLET SKILLS SECTION */
 @media screen and (min-width: 48rem) {
-  body {
+  /* body {
     background-image: url(images/pattern-rings.svg);
     background-repeat: no-repeat;
     background-position: 600px 1050px;
-  }
+  } */
 
   #skills {
     width: 100vw;
@@ -729,11 +729,11 @@ picture {
 
 /* DESKTOP SKILLS SECTION */
 @media screen and (min-width: 62rem) {
-  body {
+  /* body {
     background-image: url(images/pattern-rings.svg);
     background-repeat: no-repeat;
     background-position: 950px 1100px;
-  }
+  } */
 
   #skills {
     /* 1110PX */
