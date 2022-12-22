@@ -25,6 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./images/mobileScreenshot.png)
+![](./images/tabletScreenshot.png)
 ![](./images/desktopScreenshot.png)
 
 ### Links
@@ -44,6 +45,10 @@ Users should be able to:
 - JavaScript
 
 ### What I learned
+
+- Background image positioning
+- [Controlling background-images | CSS Tutoria](https://www.youtube.com/watch?v=3T_Jy1CqH9k&t=2s)
+- [Example Code](https://codepen.io/kevinpowell/pen/abmGBzd)
 
 ### Continued development
 
