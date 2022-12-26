@@ -75,6 +75,12 @@ select {
     }
 }
 
+h1,
+p {
+    text-align: center;
+    color: white;
+}
+
 /* CSS RESET ENDING */
 
 /* CSS START */
@@ -220,6 +226,56 @@ main {
     margin: 0 auto;
 }
 
+/* MOBILE benefits */
+#benefits {
+    /* 144px */
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.individual-item-article {
+    /* 56px */
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-benefits-img {
+    /* 120px */
+    width: 7.4375rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightBlue);
+    border-radius: 45px;
+}
+
+.individual-item-article>h1 {
+    /* 32px */
+    margin-top: 2rem;
+    font-weight: 800;
+    /* 18px */
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+}
+
+.individual-item-article p {
+    /* 11px */
+    margin-top: 0.6875rem;
+    font-weight: 500;
+    /* 15px */
+    font-size: 0.9375rem;
+    /* 25px */
+    line-height: 1.5625rem;
+    color: var(--violet);
+}
+
+/* TABLET benefits */
+/* DESKTOP BENEFITS */
+
+
+/* RESPONSIVE */
 @media screen and (min-width: 48rem) {
 
     /* TABLET HERO */
