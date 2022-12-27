@@ -251,16 +251,17 @@ main {
     border-radius: 45px;
 }
 
-.individual-item-article>h1 {
+.container-benefits-text>h1 {
     /* 32px */
     margin-top: 2rem;
     font-weight: 800;
     /* 18px */
     font-size: 1.125rem;
+    /* 25px */
     line-height: 1.5625rem;
 }
 
-.individual-item-article p {
+.container-benefits-text>p {
     /* 11px */
     margin-top: 0.6875rem;
     font-weight: 500;
@@ -270,10 +271,6 @@ main {
     line-height: 1.5625rem;
     color: var(--violet);
 }
-
-/* TABLET benefits */
-/* DESKTOP BENEFITS */
-
 
 /* RESPONSIVE */
 @media screen and (min-width: 48rem) {
@@ -345,10 +342,52 @@ main {
         background-size: contain;
         z-index: -1;
     }
+
+    /* TABLET benefits */
+
+    #benefits {
+        margin-top: 11rem;
+    }
+
+    .container-item-article {
+        width: 573px;
+        margin: 0 auto;
+    }
+
+    .individual-item-article {
+        flex-direction: row;
+        /* 40px 98px */
+        margin: 2.5rem 0;
+    }
+
+    .individual-item-article:nth-child(odd) {
+        justify-content: flex-end;
+    }
+
+    .individual-item-article:nth-child(even) {
+        justify-content: flex-start;
+    }
+
+    .container-benefits-text {
+        /* 340px */
+        max-width: 21.25rem;
+        /* 55px */
+        margin-left: 3.4375rem;
+    }
+
+    .container-benefits-text>h1 {
+        margin: 0;
+    }
+
+    .container-benefits-text>h1,
+    .container-benefits-text>p {
+        text-align: start;
+    }
 }
 
-/* DESKTOP HERO */
 @media screen and (min-width: 62rem) {
+
+    /* DESKTOP HERO */
     .hero {
         /* 96.81px */
         margin-top: 6.050625px;
@@ -397,4 +436,6 @@ main {
         background-size: contain;
         z-index: -1;
     }
+
+    /* DESKTOP BENEFITS */
 }
