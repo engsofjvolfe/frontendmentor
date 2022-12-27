@@ -438,4 +438,49 @@ main {
     }
 
     /* DESKTOP BENEFITS */
+    #benefits {
+        margin-top: 8rem;
+    }
+
+    .container-item-article {
+        width: 100%;
+        /* 1110px */
+        max-width: 69.375rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .individual-item-article {
+        /* 0 15px */
+        margin: 0 0.9375rem;
+        /* 255px */
+        width: 15.9375rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .individual-item-article:nth-child(even) {
+        /* 50px 0 0 0 */
+        padding: 3.125rem 0 0 0;
+
+    }
+
+    .individual-item-article:nth-child(odd) {
+        justify-content: flex-start;
+    }
+
+    .container-benefits-text {
+        margin: 0;
+    }
+
+    .container-benefits-text>h1 {
+        /* 48px */
+        margin-top: 3rem;
+    }
+
+    .container-benefits-text>p {
+        /* 23px */
+        margin-top: 1.5625rem;
+    }
 }
