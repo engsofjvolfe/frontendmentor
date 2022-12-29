@@ -355,8 +355,6 @@ main {
     line-height: 3.4375rem;
 }
 
-/* DESKTOP PRICING PLANS */
-
 /* RESPONSIVE */
 @media screen and (min-width: 48rem) {
 
@@ -630,5 +628,58 @@ main {
     .container-benefits-text>p {
         /* 23px */
         margin-top: 1.5625rem;
+    }
+
+    /* DESKTOP PRICING PLANS */
+    #pricing {
+        width: 100%;
+        /* 202px */
+        margin-top: 12.625rem;
+        max-width: 920px;
+    }
+
+    .free-plan,
+    .payed-plan {
+        /* 445px */
+        max-width: 27.8125rem;
+        /* 50px 38px */
+        padding: 3.125rem 2.375rem;
+    }
+
+    /* gaps for pricing boxes */
+    .free-plan {
+        margin-right: 15px;
+    }
+
+    .payed-plan {
+        margin-left: 15px;
+    }
+
+    /* end pricing boxes */
+    
+    /* margin background box  */
+    .container-pricing-plans {
+        width: 100%;
+        /* 105px */
+        margin: 6.5625rem 0;
+        display: flex;
+    }
+
+    .container-pricing-description {
+        margin: 0 auto;
+        /* 540px */
+        max-width: 31.75rem;
+    }
+
+    .container-pricing-description>h1 {
+        /* 32px */
+        font-size: 2rem;
+        /* 44px */
+        line-height: 2.75rem;
+    }
+
+    .container-pricing-description>p {
+        /* 24px */
+        margin-top: 1.5rem;
     }
 }
