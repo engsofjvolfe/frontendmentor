@@ -380,6 +380,10 @@ main {
     margin-top: 1.9375rem;
 }
 
+.form-control {
+    margin-bottom: 120px;
+}
+
 input {
     width: 100%;
     border: 0;
@@ -393,6 +397,7 @@ small {
 
 input[type='email'] {
     background-color: var(--lightBlue);
+    color: var(--white);
 }
 
 input::placeholder,
@@ -408,7 +413,6 @@ input[type='submit'] {
     background-color: var(--green);
     color: var(--lightBlue);
     cursor: pointer;
-
 }
 
 /* RESPONSIVE */
@@ -495,7 +499,6 @@ input[type='submit'] {
     }
 
     /* TABLET benefits */
-
     #benefits {
         margin-top: 11rem;
     }
@@ -574,8 +577,37 @@ input[type='submit'] {
         /* 24px */
         margin-top: 1.5rem;
     }
+
+    /* TABLET FORM */
+    #form {
+        /* 119px */
+        margin-top: 7.4375rem;
+    }
+
+    .container-form {
+        /* 29px */
+        margin-top: 1.8125rem;
+    }
+
+    .form-control {
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="email"] {
+        width: 320px;
+        margin-right: 8px;
+    }
+
+    input[type="submit"] {
+        width: 140px;
+        margin: 0;
+        margin-left: 8px;
+    }
+
 }
 
+/* RESPONSIVE DESKTOP */
 @media screen and (min-width: 62rem) {
 
     /* DESKTOP HEADER */
