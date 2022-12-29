@@ -266,14 +266,13 @@ main {
 }
 
 .free-plan>ul>li,
-.payed-plan>ul>li {
+.paid-plan>ul>li {
     /* 12px */
     margin-top: 0.75rem;
     list-style-type: none;
 }
 
 /* end list general settings */
-
 .container-pricing-description>h1 {
     /* 24px */
     font-size: 1.5rem;
@@ -289,7 +288,7 @@ main {
 
 /* background settings */
 .free-plan,
-.payed-plan {
+.paid-plan {
     /* 49px 29px 32px */
     padding: 3.0625rem 1.8125rem 2rem;
     /* 8px */
@@ -309,43 +308,43 @@ main {
     content: url(assets/icon-check.svg);
 }
 
-.payed-plan {
+.paid-plan {
     /* 65px */
     margin-top: 4.0625rem;
     background-color: var(--green);
 }
 
-.payed-plan>ul>li:before {
+.paid-plan>ul>li:before {
     content: url(assets/icon-check-b.svg);
 }
 
 .free-plan>ul>li:before,
-.payed-plan>ul>li:before {
+.paid-plan>ul>li:before {
     /* 15.32px */
     margin-right: 0.9575rem;
 }
 
-.payed-plan>h1,
-.payed-plan>p {
+.paid-plan>h1,
+.paid-plan>p {
     color: var(--darkBlue);
 }
 
 .free-plan>h1,
-.payed-plan>h1 {
+.paid-plan>h1 {
     text-align: start;
     /* 19px */
     margin-bottom: 1.1875rem;
 }
 
 .free-plan>h1,
-.payed-plan>h1,
+.paid-plan>h1,
 .free-plan>p,
-.payed-plan>p {
+.paid-plan>p {
     text-align: start;
 }
 
 .free-plan>h1:nth-of-type(2),
-.payed-plan>h1:nth-of-type(2) {
+.paid-plan>h1:nth-of-type(2) {
     /* 26px */
     margin-top: 1.625rem;
     font-weight: 800;
@@ -353,6 +352,63 @@ main {
     font-size: 2.5rem;
     /* 55px */
     line-height: 3.4375rem;
+}
+
+/* MOBILE FORM */
+#form {
+    /* 145px */
+    margin-top: 9.0625rem;
+}
+
+.form-header {
+    background-image: url(assets/bg-footer-squiggle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+}
+
+.form-header>h1 {
+    font-weight: 800;
+    /* 24px */
+    font-size: 1.5rem;
+    /* 33px */
+    line-height: 2.0625rem;
+}
+
+.container-form {
+    /* 31px */
+    margin-top: 1.9375rem;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    border-radius: 24px;
+    padding: 12px 18px;
+}
+
+small {
+    display: none;
+}
+
+input[type='email'] {
+    background-color: var(--lightBlue);
+}
+
+input::placeholder,
+input[type='submit'] {
+    color: var(--white);
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+input[type='submit'] {
+    margin-top: 24px;
+    background-color: var(--green);
+    color: var(--lightBlue);
+    cursor: pointer;
+
 }
 
 /* RESPONSIVE */
@@ -487,7 +543,7 @@ main {
     }
 
     .free-plan,
-    .payed-plan {
+    .paid-plan {
         /* 445px */
         max-width: 27.8125rem;
         /* 50px 38px */
@@ -500,21 +556,21 @@ main {
         margin: 4.9375rem auto;
     }
 
-    .payed-plan {
+    .paid-plan {
         /* 65px */
         margin: 4.0625rem auto;
     }
 
     /* end margin bg box */
     .free-plan>h1,
-    .payed-plan>h1,
+    .paid-plan>h1,
     .free-plan>p,
-    .payed-plan>p {
+    .paid-plan>p {
         text-align: start;
     }
 
     .free-plan>h1:nth-of-type(2),
-    .payed-plan>h1:nth-of-type(2) {
+    .paid-plan>h1:nth-of-type(2) {
         /* 24px */
         margin-top: 1.5rem;
     }
@@ -639,7 +695,7 @@ main {
     }
 
     .free-plan,
-    .payed-plan {
+    .paid-plan {
         /* 445px */
         max-width: 27.8125rem;
         /* 50px 38px */
@@ -651,12 +707,12 @@ main {
         margin-right: 15px;
     }
 
-    .payed-plan {
+    .paid-plan {
         margin-left: 15px;
     }
 
     /* end pricing boxes */
-    
+
     /* margin background box  */
     .container-pricing-plans {
         width: 100%;
