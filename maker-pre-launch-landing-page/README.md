@@ -35,6 +35,8 @@ Users should be able to:
 
 ## My process
 
+- Learned flexbox 'order' property
+
 ### Built with
 
 - Semantic HTML5 markup
