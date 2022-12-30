@@ -423,8 +423,8 @@ input[type='submit'] {
     border: 1px solid var(--green);
 }
 
-.form-control.error input[type="email"]{
-    border:1px solid var(--pinkErrors);
+.form-control.error input[type="email"] {
+    border: 1px solid var(--pinkErrors);
 }
 
 
@@ -561,7 +561,7 @@ input[type='submit'] {
 
     /* TABLET PRICING PLANS */
     #pricing {
-        margin: 8.8125rem auto;
+        margin: 7.8125rem auto;
         /* 141px */
         width: 573px;
     }
@@ -602,7 +602,7 @@ input[type='submit'] {
     /* TABLET FORM */
     #form {
         /* 119px */
-        margin-top: 7.4375rem;
+        margin-top: 5rem;
     }
 
     .container-form {
@@ -762,7 +762,7 @@ input[type='submit'] {
     #pricing {
         width: 100%;
         /* 202px */
-        margin-top: 12.625rem;
+        margin-top: 10.625rem;
         max-width: 920px;
     }
 
@@ -789,7 +789,7 @@ input[type='submit'] {
     .container-pricing-plans {
         width: 100%;
         /* 105px */
-        margin: 6.5625rem 0;
+        margin: 2rem 0;
         display: flex;
     }
 
