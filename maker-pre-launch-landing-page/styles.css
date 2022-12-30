@@ -114,7 +114,7 @@ h1 {
 }
 
 p,
-ul>li {
+ul>li, small {
     font-weight: 500;
     /* 15px */
     font-size: 0.9375rem;
@@ -391,7 +391,7 @@ input {
     padding: 0.75rem 1.125rem;
 }
 
-small {
+.small-error {
     display: none;
 }
 
@@ -428,7 +428,7 @@ input[type='submit'] {
 }
 
 
-.form-control.error small {
+.form-control.error .small-error {
     color: var(--pinkErrors);
     display: block;
 }

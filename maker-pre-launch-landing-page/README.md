@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/maker-pre-launch-landing-page)
+- Live Site URL: [Live site URL](https://jvolfe-prelaunch-lp.netlify.app/)
 
 ## My process
 
