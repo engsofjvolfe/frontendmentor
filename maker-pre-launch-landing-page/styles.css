@@ -418,6 +418,24 @@ input[type='submit'] {
     cursor: pointer;
 }
 
+/* form control */
+.form-control.success input[type="email"] {
+    border: 1px solid var(--green);
+}
+
+.form-control.error input[type="email"]{
+    border:1px solid var(--pinkErrors);
+}
+
+
+.form-control.error small {
+    color: var(--pinkErrors);
+    display: block;
+}
+
+/* end form control */
+
+
 /* RESPONSIVE */
 @media screen and (min-width: 48rem) {
 
@@ -617,12 +635,15 @@ input[type='submit'] {
         margin-left: 0.5rem;
     }
 
-    .error {
+    .small-error {
         order: 3;
-        display: block;
-        color: white;
         /* 4px 0 0 18px */
         margin: 0.25rem 0 0 1.125rem;
+    }
+
+    .form-control.error small {
+        color: var(--pinkErrors);
+        display: block;
     }
 }
 
