@@ -188,15 +188,69 @@ main {
 }
 
 /* END ARTICLE1 */
-@media screen and (min-width: 48rem) {
 
-    /* ARTICLE1 */
-    .article1 {
-        grid-area: article1;
-        padding: 40px;
-        grid-column: span 2
+/* ARTICLE 2 */
+.article2 {
+    background-color: var(--cyan);
+    /* 24px */
+    padding: 1.5rem;
+    color: var(--white);
+}
+
+.article2>p:nth-child(2) {
+    /* 32px */
+    font-size: 2rem;
+    /* 37px */
+    line-height: 2.3125rem;
+    /* -0.4px */
+    letter-spacing: 0.025rem;
+}
+
+small {
+    font-weight: 400;
+    /* 16px */
+    font-size: 1rem;
+    /* 26px */
+    line-height: 1.625rem;
+    /* -0.2px */
+    letter-spacing: -0.0125rem;
+    opacity: 0.5;
+}
+
+.article2>p:nth-child(3) {
+    margin-bottom: 26px;
+}
+
+button {
+    width: 263px;
+    font-weight: 700;
+    /* 16px */
+    font-size: 1rem;
+    /* 19px */
+    line-height: 1.1875rem;
+    /* -0.2px */
+    letter-spacing: -0.0125rem;
+    color: var(--white);
+    background-color: var(--brightYellow);
+    /* 15px */
+    padding: 0.9375rem;
+    /* 0 10px 10px */
+    box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.0973011);
+    /* 5px */
+    border: 0;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+/* END ARTICLE 2 */
+
+/* DESKTOP RESPONSIVE */
+@media screen and (min-width: 48rem) {
+    .generic-div {
+        display: flex;
     }
 
+    /* ARTICLE1 */
     .article1>p {
         /* 16px */
         font-size: 1rem;
