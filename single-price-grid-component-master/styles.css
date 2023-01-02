@@ -24,7 +24,7 @@ dd {
 
 /* font */
 body {
-    font-family: "Karla", sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 h1,
@@ -40,6 +40,32 @@ P {
     font-weight: 400;
 }
 
+h1 {
+    /* 24px */
+    font-size: 1.5rem;
+    /* 28px */
+    line-height: 1.75rem;
+    /* -0.3px */
+    letter-spacing: -0.0188rem;
+}
+
+h2 {
+    /* 18px */
+    font-size: 1.125rem;
+    /* 21px */
+    line-height: 1.3125rem;
+    /* -0.225px */
+    letter-spacing: -0.0141rem;
+}
+
+p {
+    /* 16px */
+    font-size: 1rem;
+    /* 26px */
+    line-height: 1.625rem;
+    /* -0.2px */
+    letter-spacing: -0.0125rem;
+}
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
@@ -54,7 +80,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -63,7 +88,6 @@ body {
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
-
 
 /*Make images easier to work with */
 img,
@@ -107,9 +131,6 @@ select {
 }
 
 body {
-    /*  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--grayishBlue);
     min-height: 100vh;
 }
