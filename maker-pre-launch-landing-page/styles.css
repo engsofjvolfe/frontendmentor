@@ -114,7 +114,8 @@ h1 {
 }
 
 p,
-ul>li, small {
+ul>li,
+small {
     font-weight: 500;
     /* 15px */
     font-size: 0.9375rem;
@@ -289,10 +290,27 @@ main {
 /* background settings */
 .free-plan,
 .paid-plan {
+    position: relative;
     /* 49px 29px 32px */
     padding: 3.0625rem 1.8125rem 2rem;
     /* 8px */
     border-radius: 0.5rem;
+}
+
+
+.free-plan:before,
+.paid-plan:before {
+    position: absolute;
+}
+
+.free-plan:before {
+    content: url(assets/icon-free.svg);
+    top: -20px;
+}
+
+.paid-plan:before {
+    content: url(assets/icon-paid.svg);
+    top: -35px;
 }
 
 /* end background settings */
@@ -378,8 +396,8 @@ main {
 }
 
 /* .form-control { */
-    /* 120px */
-    /* margin-bottom: 7.5rem; */
+/* 120px */
+/* margin-bottom: 7.5rem; */
 /* } */
 
 input {
@@ -605,7 +623,7 @@ input[type='submit'] {
         margin: 5rem 0;
     }
 
-    #forms{
+    #forms {
         display: flex;
     }
 
@@ -615,7 +633,7 @@ input[type='submit'] {
         display: flex;
         justify-content: center;
     }
-    
+
     .form-control {
         /* 430px */
         width: 26.875rem;
