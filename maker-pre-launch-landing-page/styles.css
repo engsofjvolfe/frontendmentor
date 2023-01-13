@@ -539,7 +539,7 @@ input[type='submit'] {
 
     /* TABLET benefits */
     #benefits {
-        margin-top: 11rem;
+        margin-top: 11.625rem;
     }
 
     .container-benefits-img,
@@ -625,7 +625,7 @@ input[type='submit'] {
     /* TABLET FORM */
     #form {
         /* 119px */
-        margin: 5rem 0;
+        margin: 15rem 0 5rem;
     }
 
     #forms {
@@ -641,10 +641,15 @@ input[type='submit'] {
 
     .form-control {
         /* 430px */
-        width: 26.875rem;
+        width: 20rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .form-header>h1 {
+        font-size: 2rem;
+        line-height: 44px;
     }
 
     input[type='email'] {
@@ -738,7 +743,7 @@ input[type='submit'] {
 
     /* DESKTOP BENEFITS */
     #benefits {
-        margin-top: 8rem;
+        margin-top: 18rem;
     }
 
     .container-item-article {
