@@ -224,6 +224,11 @@ main {
     width: 100%;
 }
 
+.container-benefits-img,
+.container-benefits-img img {
+    width: 7.5rem;
+}
+
 .individual-item-article {
     /* 56px */
     margin-top: 3.5rem;
@@ -234,8 +239,6 @@ main {
 }
 
 .container-benefits-img {
-    /* 120px */
-    width: 7.4375rem;
     display: flex;
     justify-content: center;
     background-color: var(--lightBlue);
@@ -296,7 +299,6 @@ main {
     /* 8px */
     border-radius: 0.5rem;
 }
-
 
 .free-plan:before,
 .paid-plan:before {
@@ -437,14 +439,13 @@ input[type='submit'] {
 }
 
 /* form control */
-.form-control.success input[type="email"] {
+.form-control.success input[type='email'] {
     border: 1px solid var(--green);
 }
 
-.form-control.error input[type="email"] {
+.form-control.error input[type='email'] {
     border: 1px solid var(--pinkErrors);
 }
-
 
 .form-control.error .small-error {
     color: var(--pinkErrors);
@@ -452,7 +453,6 @@ input[type='submit'] {
 }
 
 /* end form control */
-
 
 /* RESPONSIVE */
 @media screen and (min-width: 48rem) {
@@ -540,6 +540,11 @@ input[type='submit'] {
     /* TABLET benefits */
     #benefits {
         margin-top: 11rem;
+    }
+
+    .container-benefits-img,
+    .container-benefits-img>img {
+        width: 10rem;
     }
 
     .container-item-article {
