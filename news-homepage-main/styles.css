@@ -79,22 +79,15 @@ select {
 
 /* CSS START */
 :root {
-    --softOrange: hsl(35, 77%, 62%);
-    --softRed: hsl(5, 85%, 63%);
-    --offWhite: hsl(36, 100%, 99%);
-    --grayishBlue: hsl(233, 8%, 79%);
-    --darkGrayishBlue: hsl(236, 13%, 42%);
-    --veryDarkBlue: hsl(240, 100%, 5%);
+    --softOrange: #e9ab53;
+    --softRed: #f15e50;
+    --offWhite: #fffdfa;
+    --grayishBlue: #c5c6ce;
+    --darkGrayishBlue: #5d5f79;
+    --veryDarkBlue: #00001a;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    /*  */
-    display: grid;
-    min-height: 100vh;
-}
-
-/* TYPOGRAPHY */
+/* TYPOGRAPHY BASE */
 h1,
 h3,
 h4 {
@@ -145,3 +138,87 @@ p {
     line-height: 1.625rem;
     color: var(--darkGrayishBlue);
 }
+
+/*  END TYPOGRAPHY BASE*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    /*  */
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* NAVBAR'S BARS */
+nav {
+    overflow: hidden;
+    background-color: var(--offWhite);
+    width: 70%;
+    height: 100vh;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar__links {
+    list-style: none;
+    /* 144px */
+    margin-top: 9rem;
+}
+
+.navbar__links>li {
+    /* 24px */
+    margin-bottom: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    /* 18px */
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+}
+
+.navbar__single-link {
+    text-decoration: none;
+    color: var(--veryDarkBlue);
+}
+
+.navbar__btn {
+    position: absolute;
+    /* 323.8px */
+    left: 20.2375rem;
+    /* 27.3px */
+    top: 1.70625rem;
+    z-index: 1;
+    /* 40px */
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    /* 2px */
+    border: 0.125rem solid var(--veryDarkBlue);
+}
+
+.bar2 {
+    /* 4px */
+    margin: 0.25rem  0;
+}
+
+.bar1 .change {
+    transform: rotate(-45deg);
+}
+
+.bar2 .change {
+    opacity: 0;
+}
+
+.bar3 .change {
+    transform: rotate(45deg);
+}
+
+.navbar__collapse {
+    width: 80%;
+}
+
+/* END NAVBAR'S BARS */
