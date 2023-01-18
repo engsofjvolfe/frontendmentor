@@ -60,7 +60,7 @@ select {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
     }
@@ -73,7 +73,7 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
-}
+} */
 
 /* CSS RESET ENDING */
 
@@ -148,16 +148,17 @@ body {
     padding: 1rem;
 }
 
-/* NAVBAR'S BARS */
-nav {
+/* NAVBAR LINKS */
+.navigation {
     overflow: hidden;
     background-color: var(--offWhite);
-    width: 70%;
+    width: 0;
     height: 100vh;
     margin-top: 0;
     position: absolute;
     top: 0;
     right: 0;
+    transition: width 0.5s ease-in-out;
 }
 
 .navbar__links {
@@ -181,44 +182,71 @@ nav {
     color: var(--veryDarkBlue);
 }
 
+/* END NAVBAR LINKS */
+
+/* NAVBAR BTN */
 .navbar__btn {
     position: absolute;
     /* 323.8px */
-    left: 20.2375rem;
+    right: 1rem;
     /* 27.3px */
     top: 1.70625rem;
     z-index: 1;
     /* 40px */
     width: 2.5rem;
+    height: 1.3rem;
+    /* teste */
+    /* height:2.5rem;
+    outline:2px solid forestgreen; */
+    /*fimteste  */
     cursor: pointer;
+    z-index: 1;
 }
 
 .bar1,
 .bar2,
 .bar3 {
     /* 2px */
-    border: 0.125rem solid var(--veryDarkBlue);
+    border: 2px solid var(--veryDarkBlue);
+    transition: all 0.3s;
 }
 
+/* GAP BETWEEN BARS */
 .bar2 {
-    /* 4px */
-    margin: 0.25rem  0;
+    transform: translateY(0.3rem);
 }
 
-.bar1 .change {
-    transform: rotate(-45deg);
+.bar3 {
+    transform: translateY(0.6rem);
 }
 
-.bar2 .change {
+/* END GAP BETWEEN BARS*/
+
+/* BAR ROTATION */
+.change .bar1 {
+    /* COLORTEST */
+    /* border-color: aqua; */
+    /* ENDCOLORTEST */
+    transform: translateY(0.5rem) rotate(45deg);
+}
+
+.change .bar2 {
     opacity: 0;
 }
 
-.bar3 .change {
-    transform: rotate(45deg);
+.change .bar3 {
+    /* COLORTEST */
+    /* border-color: red; */
+    /* END COLORTEST */
+    transform: rotate(-45deg);
 }
 
-.navbar__collapse {
+/* END BAR ROTATION */
+
+/* END NAVBAR BTN */
+/* DYNAMIC MENU CLASS */
+.navigation.navbar__collapse {
     width: 80%;
 }
 
-/* END NAVBAR'S BARS */
+/* END DYNAMIC MENU CLASS */
