@@ -399,9 +399,8 @@ body {
     }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 48rem) {
 
-    /* DESKTOP HERO SECTION */
     .container-body {
         /* 184px 165px 129px */
         padding: 11.5rem 10.3125rem 8.0625rem;
@@ -486,6 +485,7 @@ body {
 
     .container-news2 {
         display: flex;
+        justify-content: space-between;
     }
 
     .container-item-news2:nth-of-type(2),
@@ -493,5 +493,8 @@ body {
         margin-top: 0;
     }
 
-    /* END DESKTOP HERO */
+    .news2-notes{
+        width: 226px;
+    }
+
 }
