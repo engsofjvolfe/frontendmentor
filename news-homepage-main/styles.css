@@ -178,7 +178,7 @@ body {
   margin-top: 9rem;
 }
 
-.navbar__links > li {
+.navbar__links>li {
   /* 24px */
   margin-bottom: 1.5rem;
   font-style: normal;
@@ -219,7 +219,7 @@ body {
 .bar2,
 .bar3 {
   /* 2px */
-  border: 2px solid var(--veryDarkBlue);
+  border: 0.125rem solid var(--veryDarkBlue);
   transition: all 0.3s;
 }
 
@@ -320,7 +320,7 @@ body {
   background-color: var(--veryDarkBlue);
 }
 
-.container-news > h2 {
+.container-news>h2 {
   color: var(--softOrange);
 }
 
@@ -329,13 +329,13 @@ body {
   margin-top: 2.1875rem;
 }
 
-.news-notes > h3:nth-of-type(2),
-.news-notes > h3:nth-of-type(3) {
+.news-notes>h3:nth-of-type(2),
+.news-notes>h3:nth-of-type(3) {
   /* 31px */
   margin-top: 1.9375rem;
 }
 
-.news-notes > p {
+.news-notes>p {
   /* 302px*/
   /* min-width: 18.875rem; */
   color: var(--grayishBlue);
@@ -343,7 +343,7 @@ body {
   margin-top: 0.5rem;
 }
 
-.news-notes > .border {
+.news-notes>.border {
   /* 29px */
   margin-top: 1.8125rem;
   /* 1px */
@@ -357,7 +357,7 @@ body {
   display: flex;
 }
 
-.container-item-news2 > img {
+.container-item-news2>img {
   /* 100px */
   width: 6.25rem;
   /* 127px */
@@ -375,11 +375,11 @@ body {
   margin-left: 1.5rem;
 }
 
-.news2-notes > h2 {
+.news2-notes>h2 {
   color: var(--grayishBlue);
 }
 
-.news2-notes > h3 {
+.news2-notes>h3 {
   /* 12px */
   margin-top: 0.75rem;
   color: var(--veryDarkBlue);
@@ -390,14 +390,15 @@ body {
   line-height: 1.5rem;
 }
 
-.news2-notes > p {
-  margin-top: 9px;
+.news2-notes>p {
+  /* 9px */
+  margin-top: 0.5625rem;
   color: var(--darkGrayishBlue);
 }
 
 /* END MOBILE NEWS2 */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 36rem) {
   .logo-mobile {
     display: none;
   }
@@ -405,6 +406,7 @@ body {
   .logo-desktop {
     display: block;
   }
+
   /* NAVIGATION NAVBAR BTN */
   .navbar__btn,
   .bar1,
@@ -415,7 +417,8 @@ body {
 
   .navigation {
     width: 100%;
-    max-width: 1110px;
+    /* 1110px */
+    max-width: 69.375rem;
     margin: 0 auto;
     padding: 0;
     position: relative;
@@ -425,7 +428,8 @@ body {
 
   .navbar__links {
     width: 100%;
-    max-width: 431px;
+    /* 431px */
+    max-width: 26.9375rem;
     margin: 0;
     padding: 0;
     display: flex;
@@ -433,28 +437,32 @@ body {
 
   }
 
-  .navbar__links > li {
+  .navbar__links>li {
     margin: 0;
     align-self: center;
   }
-  .navbar__links > li:hover {
+
+  .navbar__links>li:hover {
     transform: scale(1.03);
   }
 }
 
-@media screen and (min-width: 1130px) {
+@media screen and (min-width: 70.625rem) {
   main {
     /* 55.1px */
     margin: 0 auto;
     margin-top: 3.44375rem;
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 300px 300px 129px;
+    /* 350px 350px 350px */
+    grid-template-columns: repeat(3, 21.875rem);
+    /* 300px 300px 129px */
+    grid-template-rows: 18.75rem 18.75rem 8.0625rem;
     grid-template-areas:
       'img img news'
       'text-hero text-hero news'
       'news2 news2 news2';
-    column-gap: 30px;
+    /* 30px */
+    column-gap: 1.875rem;
     justify-content: center;
   }
 
@@ -475,39 +483,47 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: calc(100% / (730 / 300));
-    max-width: 730px;
+    /* 730px */
+    max-width: 45.625rem;
   }
 
   .container-hero-text {
-    margin-top: 28px;
+    /* 28px */
+    margin-top: 1.75rem;
     grid-area: text-hero;
     display: flex;
     grid-row: 2 / 3;
   }
 
-  .container-hero-text > h1 {
-    max-width: 350px;
+  .container-hero-text>h1 {
+    /* 350px */
+    max-width: 21.875rem;
     font-weight: 800;
-    font-size: 56px;
-    line-height: 56px;
+    /* 56px */
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 
   .container-hero-pButton {
-    max-width: 350px;
-    margin-left: 30px;
+    /* 350px */
+    max-width: 21.875rem;
+    /* 30px */
+    margin-left: 1.875rem;
     margin-top: 0;
   }
 
-  .container-hero-pButton > p {
+  .container-hero-pButton>p {
     margin: 0;
   }
 
   .container-news {
-    padding: 32px 24px;
+    /* 32px 24px */
+    padding: 2rem 1.5rem;
   }
 
   .hero-button {
-    margin-top: 35px;
+    /* 35px */
+    margin-top: 2.1875rem
   }
 
   /* END DESKTOP HERO */
@@ -517,10 +533,11 @@ body {
     grid-row: 3 / -1;
   }
 
-  .container-news > h2 {
+  .container-news>h2 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
+    /* 40px */
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .container-news2 {
@@ -534,6 +551,7 @@ body {
   }
 
   .news2-notes {
-    max-width: 226px;
+    /* 226px */
+    max-width: 14.125rem;
   }
 }
