@@ -414,11 +414,8 @@ body {
   }
 
   .navigation {
-    padding: 0;
-    position: inherit;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+   
+    position: relative;
   }
 
   .navbar__links {
@@ -427,6 +424,7 @@ body {
     padding: 0;
     display: flex;
   }
+
   .navbar__links > li {
     margin: 0;
     align-self: center;
@@ -440,7 +438,7 @@ body {
   main {
     /* 55.1px */
     margin-top: 3.44375rem;
-    width: 1440px;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 300px 300px 129px;
