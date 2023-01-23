@@ -170,7 +170,11 @@ body {
   padding: 1rem;
 }
 
-.overflow {
+.container-body{
+  padding: 3rem 0;
+}
+
+body.overflow {
   overflow: hidden;
 }
 
@@ -226,7 +230,7 @@ body {
   /* 323.8px */
   right: 1rem;
   /* 27.3px */
-  top: 1.75rem;
+  top: 5rem;
   z-index: 1;
   /* 40px */
   width: 2.5rem;
