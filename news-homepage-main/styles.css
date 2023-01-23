@@ -172,6 +172,7 @@ body {
 
 .container-body{
   padding: 3rem 0;
+  background-color: var(--offWhite);
 }
 
 body.overflow {
