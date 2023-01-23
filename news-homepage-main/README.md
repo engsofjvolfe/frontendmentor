@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/news-homepage-main)
+- Live Site URL: [Live site URL](https://jvolfe-news-homepage.netlify.app/)
 
 ## My process
 
