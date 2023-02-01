@@ -9,12 +9,67 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Password generator app</title>
   </head>
   <body>
-    Password Generator P4$5W0rD! Character Length Include Uppercase Letters
-    Include Lowercase Letters Include Numbers Include Symbols Strength Generate
+    <div class="container">
+      <header>
+        <h1>password generator</h1>
+      </header>
+      <div id="generated-pwd">
+        <div>P4$5W0rD!</div>
+        <button><img src="assets/images/icon-copy.svg" alt="" /></button>
+      </div>
+      <div id="generate-options">
+        <!-- SLIDER -->
+        <div id="container-character-length">
+          <div>
+            <h2>character length</h2>
+            <p id="character-length"></p>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="7" max="15" class="slider" id="range" />
+          </div>
+        </div>
+        <!-- END SLIDER -->
+        <!-- CHECKBOX -->
+        <div class="container-checkbox">
+          <input type="checkbox" id="include-upper-case" />
+          <label for="include-upper-case">include uppercase letters</label>
+          <input type="checkbox" id="include-lower-case" />
+          <label for="include-lower-case">include lowercase letters</label>
+          <input type="checkbox" id="include-number" />
+          <label for="include-number">include numbers</label>
+          <input type="checkbox" id="include-symbol" />
+          <label for="include-symbol">include symbols</label>
+        </div>
+        <!-- END CHECKBOX -->
+      </div>
+      <!-- STRENGTH INDICATOR -->
+      <div id="pwd-strength">
+        <p>strength</p>
+        <div id="strength-level">
+          <p class="strength-level-indicator"></p>
+          <div class="strength-level-light">
+            <div class="strength-level-light-1"></div>
+            <div class="strength-level-light-2"></div>
+            <div class="strength-level-light-3"></div>
+            <div class="strength-level-light-4"></div>
+          </div>
+        </div>
+      </div>
+      <!-- END STRENGTH INDICATOR -->
+      <!-- GENERATE BTN -->
+      <button id="btn-generate">
+        generate
+        <img src="assets/images/icon-arrow-right.svg" alt="" />
+      </button>
+      <!-- END GENERATE BTN -->
+    </div>
   </body>
 </html>
