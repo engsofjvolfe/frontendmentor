@@ -33,7 +33,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -42,7 +41,6 @@ body {
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
-
 
 /*Make images easier to work with */
 img,
@@ -79,15 +77,15 @@ select {
 
 /* CSS START */
 :root {
-    --deepBlack: #24232C;
-    --black: #18171F;
-    --gray: #817D92;
-    --lightGray: #E6E5EA;
-    --lightGreen: #A4FFAF;
-    --red: #F64A4A;
-    --orange: #FB7C58;
-    --yellow: #F8CD65;
-
+    --bodyBlack: #08070b;
+    --deepBlack: #24232c;
+    --black: #18171f;
+    --gray: #817d92;
+    --lightGray: #e6e5ea;
+    --lightGreen: #a4ffaf;
+    --red: #f64a4a;
+    --orange: #fb7c58;
+    --yellow: #f8cd65;
 }
 
 html {
@@ -100,12 +98,117 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: var(--bodyBlack);
+    color: var(--lightGray);
 }
 
 .container {
     width: 100%;
+    max-width: 540px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 16px;
 }
+
+h1 {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #817d92;
+    text-transform: capitalize;
+}
+
+#generated-pwd,
+#generated-pwd button,
+#generate-options {
+    background-color: var(--deepBlack);
+}
+
+#generated-pwd,
+#generate-options {
+    margin-top: 16px;
+}
+
+#generated-pwd {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 16px 15px;
+    align-items: center;
+}
+
+#generated-pwd>div {
+    font-size: 32px;
+    line-height: 42px;
+    color: var(--gray);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+#generated-pwd button {
+    cursor: pointer;
+    border: 0;
+}
+
+#generated-pwd img {
+    width: 17.5px;
+}
+
+#generate-options {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-character-length>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container-character-length h2 {
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 21px;
+    color: #e6e5ea;
+}
+
+#character-length {
+    font-size: 24px;
+    line-height: 32px;
+    color: #A4FFAF;
+}
+
+
+/* SLIDECONTAINER */
+#slidecontainer {
+    margin-top: 8px;
+}
+
+#range {
+    width: 100%;
+    height: 8px;
+    border-radius: 25;
+    background-color: var(--lightGreen);
+    border-radius: 0.6rem;
+}
+
+
+#range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#range::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: var(--lightGray);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*END SLIDECONTAINER */
