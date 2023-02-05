@@ -138,10 +138,11 @@ h1 {
     padding: 17px 16px 15px;
     align-items: center;
 }
-
-/* #generate-pwd.generate-pwd-color{
-    color: var(--lightGray);
-} */
+/* new color JS*/
+#generate-pwd.has-password {
+    background-color: var(--lightGray);
+}
+/* end new color JS */
 
 #generated-pwd>div {
     font-size: 32px;

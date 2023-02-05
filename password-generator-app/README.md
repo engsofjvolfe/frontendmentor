@@ -49,8 +49,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- ChatGPT
 
 ### What I learned
+
+- I used chat GPT for the first time so i could learn how to create iteractions using JS. I didn't know how to use the slider, checkboxes, link checkboxes with logic elements. So the tool helped me a lot, at the same time, the comments were generated and helped me to learn properly how this code works. I still need to implement a lot of new codes using these elements, so i'll be able to create muscle memory.
 
 ### Continued development
 
