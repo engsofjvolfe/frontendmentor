@@ -138,19 +138,22 @@ h1 {
     padding: 17px 16px 15px;
     align-items: center;
 }
-/* new color JS*/
-#generate-pwd.has-password {
-    background-color: var(--lightGray);
-}
-/* end new color JS */
 
-#generated-pwd>div {
+#generated-pwd div {
     font-size: 32px;
     line-height: 42px;
     color: var(--gray);
     mix-blend-mode: normal;
     opacity: 0.25;
 }
+
+/* new color JS*/
+#generate-pwd-container.has-password {
+    color: var(--lightGray);
+    opacity: 1;
+}
+
+/* end new color JS */
 
 #generated-pwd button {
     cursor: pointer;
@@ -179,7 +182,7 @@ h1 {
     color: #e6e5ea;
 }
 
- #container-character-length h2 {
+#container-character-length h2 {
     width: 100%;
     display: flex;
     align-items: center;
