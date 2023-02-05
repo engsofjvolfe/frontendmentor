@@ -157,7 +157,7 @@ h1 {
 }
 
 #generate-options {
-    padding: 16px;
+    padding: 24px 16px 32px;
     display: flex;
     flex-direction: column;
 }
@@ -330,3 +330,25 @@ h1 {
 }
 
 /* END STRENGTH INDICATOR */
+
+/* BUTTON */
+#btn-generate {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    background-color: var(--lightGreen);
+    justify-content: center;
+    padding: 21px 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--deepBlack);
+}
+
+#btn-generate>img {
+    width: 11.11px;
+    height: 12px;
+    align-self: center;
+    margin-left: 24px;
+}
+
+/* END BUTTON */
