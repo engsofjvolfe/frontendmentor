@@ -5,6 +5,10 @@ const btn = document.getElementById('btn-generate')
 const generatedPwd = document.getElementById('generated-pwd-container')
 
 //SLIDER
+// Set the initial value of the slider to the minimum value
+window.onload = function () {
+    slider.value = 0;
+}
 slider.addEventListener('input', function () {
     // Add an event listener to the slider to listen for input events
     const percent = (slider.value - slider.min) / (slider.max - slider.min) // Calculate the percentage of the slider value relative to its min and max values
@@ -14,6 +18,8 @@ slider.addEventListener('input', function () {
 })
 //END SLIDER
 
+
+//CHECKBOX
 btn.addEventListener('click', function () {
     let selectedOptions = []
     // loop through all checkboxes to see which ones are selected
@@ -22,7 +28,7 @@ btn.addEventListener('click', function () {
             selectedOptions.push(checkbox.value)
         }
     })
-    //END CHECKBOXES
+//END CHECKBOXES
 
     let password = '' // Initialize the `password` variable as an empty string
 
@@ -66,6 +72,7 @@ btn.addEventListener('click', function () {
         if (generatedPwd) {
             // Add 'has-password' class to the generate-pwd element
             generatedPwd.classList.add('has-password');
+            console.log(generatedPwd.classList)
         } else {
             // Remove 'has-password' class from the generate-pwd element
             generatedPwd.classList.remove('has-password');
