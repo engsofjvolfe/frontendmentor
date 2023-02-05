@@ -22,7 +22,7 @@
         <h1>password generator</h1>
       </header>
       <div id="generated-pwd">
-        <div>P4$5W0rD!</div>
+        <div id="generated-pwd-container">P4$5W0rD!</div>
         <button><img src="assets/images/icon-copy.svg" alt="" /></button>
       </div>
       <div id="generate-options">
@@ -30,7 +30,7 @@
         <div id="container-character-length">
           <div>
             <h2>character length</h2>
-            <p id="character-length"></p>
+            <p id="character-length">7</p>
           </div>
           <div id="slidecontainer">
             <input type="range" min="7" max="15" class="slider" id="range" />
@@ -40,23 +40,35 @@
         <!-- CHECKBOX -->
         <div id="container-checkbox">
           <div class="checkbox-item">
-            <input type="checkbox" id="include-upper-case" />
+            <input
+              type="checkbox"
+              id="include-upper-case"
+              value="upper"
+            />
             <label for="include-upper-case">
               <div>include uppercase letters</div>
             </label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="include-lower-case" />
+            <input
+              type="checkbox"
+              id="include-lower-case"
+              value="lower"
+            />
             <label for="include-lower-case">
               <div>include lowercase letters</div>
             </label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="include-number" />
+            <input type="checkbox" id="include-number" value="number" />
             <label for="include-number"><div>include numbers</div></label>
           </div>
           <div class="checkbox-item">
-            <input type="checkbox" id="include-symbol" />
+            <input
+              type="checkbox"
+              id="include-symbol"
+              value="symbol"
+            />
             <label for="include-symbol"><div>include symbols</div></label>
           </div>
         </div>
