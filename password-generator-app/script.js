@@ -35,10 +35,11 @@ btn.addEventListener('click', function () {
 
     // The following loop will be executed the number of times specified in the value of the slider
     for (let i = 0; i < slider.value; i++) {
+        console.log('valor do i: ' + i + " slider: " + slider.value)
         // Choose a random option from the values in `selectedOptions`
         let selectedOption =
             selectedOptions[Math.floor(Math.random() * selectedOptions.length)]
-
+        console.log('selected option ' + selectedOption)
         // Depending on the chosen option, do the following:
         switch (selectedOption) {
             case 'lower':
@@ -63,11 +64,12 @@ btn.addEventListener('click', function () {
                 // Add a random symbol character to the `password` variable
                 let specialChars = '!@#$%^&*(){}[]=<>/,.' // Define a string with the available symbols
                 // Choose a random symbol from the `specialChars` string and add it to the `password` variable
-                password += specialChars[Math.floor(Math.random() * specialChars.length)]
+                password +=
+                    specialChars[Math.floor(Math.random() * specialChars.length)]
                 break
         }
         // Finally, assign the value of the `password` variable to
-        generatedPwd.innerHTML = password
+        generatedPwd.textContent = password //this do not work properly using innerHTML
 
         // Check if password has been generated or inserted
         if (generatedPwd) {
@@ -92,7 +94,8 @@ btn.addEventListener('click', function () {
     } else if (strength === 4) {
         strengthIndicator.innerText = 'STRONG'
     }
-    console.log(strength)
+    console.log('força da senha' + strength)
+    console.log("CARACTERES: " + password.length)
     //strength indicator update
 
     //element colors update
@@ -120,15 +123,15 @@ function evaluatePasswordStrength(password) {
 
 function updatePasswordStrength(password) {
     // Variable to store the result of the password strength evaluation
-    var passwordStrength = evaluatePasswordStrength(password);
+    var passwordStrength = evaluatePasswordStrength(password)
 
     // Variable to store all HTML elements with the class "strength-level"
-    var lightElements = document.querySelectorAll('.strength-level');
+    var lightElements = document.querySelectorAll('.strength-level')
 
     // Loop through all elements with the class "strength-level"
     for (var i = 0; i < lightElements.length; i++) {
         // Variable representing the current element in the loop
-        var element = lightElements[i];
+        var element = lightElements[i]
 
         // If the index + 1 is less than or equal to the result of the password strength evaluation
         if (i + 1 <= passwordStrength) {
@@ -136,35 +139,28 @@ function updatePasswordStrength(password) {
             switch (passwordStrength) {
                 // Weak password
                 case 1:
-                    // Red color
-                    element.style.backgroundColor = "#F64A4A";
-                    break;
-
+                    element.style.backgroundColor = '#F64A4A'
+                    break
                 // Medium password
                 case 2:
-                    // Yellow color
-                    element.style.backgroundColor = "#F8CD65";
-                    break;
-
+                    element.style.backgroundColor = '#F8CD65'
+                    break
                 // Strong password
                 case 3:
-                    // Orange color
-                    element.style.backgroundColor = "#FB7C58";
-                    break;
+                    element.style.backgroundColor = '#FB7C58'
+                    break
 
                 // Secure password
                 case 4:
-                    // Green color
-                    element.style.backgroundColor = "#A4FFAF";
-                    break;
-
+                    element.style.backgroundColor = '#A4FFAF'
+                    break
                 // Default
                 default:
-                    break;
+                    break
             }
         } else {
             // If it is not less than or equal, remove the background color
-            element.style.backgroundColor = "";
+            element.style.backgroundColor = ''
         }
     }
 }
