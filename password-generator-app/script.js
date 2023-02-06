@@ -119,30 +119,54 @@ function evaluatePasswordStrength(password) {
 //end assess the strength of a password based on the characters added."
 
 function updatePasswordStrength(password) {
-    const passwordStrength = evaluatePasswordStrength(password)
-    const lightElements = document.querySelectorAll('.strength-level')
+    // Variable to store the result of the password strength evaluation
+    var passwordStrength = evaluatePasswordStrength(password);
 
-    lightElements.forEach((element, index) => {
-        if (index + 1 <= passwordStrength) {
+    // Variable to store all HTML elements with the class "strength-level"
+    var lightElements = document.querySelectorAll('.strength-level');
+
+    // Loop through all elements with the class "strength-level"
+    for (var i = 0; i < lightElements.length; i++) {
+        // Variable representing the current element in the loop
+        var element = lightElements[i];
+
+        // If the index + 1 is less than or equal to the result of the password strength evaluation
+        if (i + 1 <= passwordStrength) {
+            // Check the result of the password strength evaluation
             switch (passwordStrength) {
+                // Weak password
                 case 1:
-                    element.style.backgroundColor = '#F64A4A'
-                    break
+                    // Red color
+                    element.style.backgroundColor = "#F64A4A";
+                    break;
+
+                // Medium password
                 case 2:
-                    element.style.backgroundColor = '#F8CD65'
-                    break
+                    // Yellow color
+                    element.style.backgroundColor = "#F8CD65";
+                    break;
+
+                // Strong password
                 case 3:
-                    element.style.backgroundColor = '#FB7C58'
-                    break
+                    // Orange color
+                    element.style.backgroundColor = "#FB7C58";
+                    break;
+
+                // Secure password
                 case 4:
-                    element.style.backgroundColor = '#A4FFAF'
-                    break
+                    // Green color
+                    element.style.backgroundColor = "#A4FFAF";
+                    break;
+
+                // Default
                 default:
-                    break
+                    break;
             }
         } else {
-            element.style.backgroundColor = ''
+            // If it is not less than or equal, remove the background color
+            element.style.backgroundColor = "";
         }
-    })
+    }
 }
+
 // END PASSWORD STRENGTH
