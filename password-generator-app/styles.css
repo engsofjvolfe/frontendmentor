@@ -139,7 +139,7 @@ h1 {
     align-items: center;
 }
 
-#generated-pwd-container{
+#generated-pwd-container {
     font-size: 32px;
     line-height: 42px;
     color: var(--gray);
@@ -149,7 +149,7 @@ h1 {
 
 /* new color JS*/
 #generated-pwd-container.has-password {
-    color: var(--lightGray); 
+    color: var(--lightGray);
     opacity: 1;
 }
 
