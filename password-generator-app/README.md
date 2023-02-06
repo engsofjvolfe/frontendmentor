@@ -50,6 +50,7 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 - ChatGPT
+- clipboard.writeText
 
 ### What I learned
 
