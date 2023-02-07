@@ -98,9 +98,15 @@ btn.addEventListener('click', function () {
                     specialChars[Math.floor(Math.random() * specialChars.length)]
                 break
         }
-        // Finally, assign the value of the `password` variable to
-        generatedPwd.textContent = password //this do not work properly using innerHTML
-
+        // Finally, assign the value of the `password` variable if a new password was generated
+        if (password === '') {
+            generatedPwd.classList.add('hasntFirstPwd')
+            showPasswordCopiedPopup('Choose optios to generate password')
+        } else {
+            generatedPwd.classList.remove('hasntFirstPwd')
+            generatedPwd.textContent = password //this do not work properly using innerHTML
+        }
+        
         // Check if password has been generated or inserted
         if (generatedPwd) {
             // Add 'has-password' class to the generate-pwd element

@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/password-generator-app)
 - Live Site URL: [Live site URL]()
 
 ## My process

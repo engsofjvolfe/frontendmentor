@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -17,36 +17,36 @@ figure,
 blockquote,
 dl,
 dd {
-    margin: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-    list-style: none;
+  list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /*Make images easier to work with */
 img,
 picture {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -54,7 +54,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -77,224 +77,225 @@ select {
 
 /* CSS START */
 :root {
-    --bodyBlack: #08070b;
-    --deepBlack: #24232c;
-    --black: #18171f;
-    --gray: #817d92;
-    --lightGray: #e6e5ea;
-    --lightGreen: rgb(164, 255, 175);
-    --red: #f64a4a;
-    --orange: #fb7c58;
-    --yellow: #f8cd65;
+  --bodyBlack: #08070b;
+  --deepBlack: #24232c;
+  --black: #18171f;
+  --gray: #817d92;
+  --lightGray: #e6e5ea;
+  --lightGreen: rgb(164, 255, 175);
+  --red: #f64a4a;
+  --orange: #fb7c58;
+  --yellow: #f8cd65;
 }
 
 html {
-    font-family: 'Jetbrains Mono';
+  font-family: 'Jetbrains Mono';
 }
 
 body {
-    /*  */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: var(--bodyBlack);
-    color: var(--lightGray);
+  /*  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bodyBlack);
+  color: var(--lightGray);
 }
 
 .container {
-    width: 100%;
-    min-width: 21.4375rem;
-    max-width: 33.75rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+  width: 100%;
+  min-width: 21.4375rem;
+  max-width: 33.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
 h1 {
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    text-align: center;
-    color: #817d92;
-    text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  text-align: center;
+  color: #817d92;
+  text-transform: capitalize;
 }
 
 #generated-pwd,
 #generated-pwd button,
 #generate-options {
-    background-color: var(--deepBlack);
+  background-color: var(--deepBlack);
 }
 
 #generated-pwd,
 #generate-options {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 #generated-pwd {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.0625rem 1rem 0.9375rem;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.0625rem 1rem 0.9375rem;
+  align-items: center;
 }
 
-#generated-pwd-container {
-    font-size: 2rem;
-    line-height: 2.625rem;
-    color: var(--gray);
-    mix-blend-mode: normal;
-    opacity: 0.25;
+#generated-pwd-container,
+#generated-pwd-container.has-password.hasntFirstPwd {
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: var(--gray);
+  mix-blend-mode: normal;
+  opacity: 0.25;
 }
 
 /* new color JS*/
 #generated-pwd-container.has-password {
-    color: var(--lightGray);
-    opacity: 1;
+  color: var(--lightGray);
+  opacity: 1;
 }
 
 /* end new color JS */
 
 #generated-pwd button {
-    cursor: pointer;
-    border: 0;
+  cursor: pointer;
+  border: 0;
 }
 
 #generated-pwd img {
-    width: 1.09375rem;
+  width: 1.09375rem;
 }
 
 #generate-options {
-    padding: 24px 1rem 2rem;
-    display: flex;
-    flex-direction: column;
+  padding: 24px 1rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-#container-character-length>div {
-    display: flex;
-    justify-content: space-between;
-}
-
-#container-character-length h2 {
-    text-transform: capitalize;
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    color: #e6e5ea;
+#container-character-length > div {
+  display: flex;
+  justify-content: space-between;
 }
 
 #container-character-length h2 {
-    width: 100%;
-    display: flex;
-    align-items: center;
+  text-transform: capitalize;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  color: #e6e5ea;
+}
+
+#container-character-length h2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #character-length {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #a4ffaf;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #a4ffaf;
 }
 
 /* SLIDECONTAINER */
 #slidecontainer {
-    margin-top: 0.5rem;
-    height: 0.375rem;
-    border: none;
-    background: var(--deepBlack);
+  margin-top: 0.5rem;
+  height: 0.375rem;
+  border: none;
+  background: var(--deepBlack);
 }
 
 #range {
-    width: 100%;
-    height: 0.5rem;
-    border-radius: 25;
-    background-color: var(--black);
-    border-radius: 0.6rem;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 25;
+  background-color: var(--black);
+  border-radius: 0.6rem;
 }
 
 #range::-webkit-slider-thumb,
 #range::-moz-range-thumb {
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
 }
 
 #range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 1.5625rem;
-    height: 1.5625rem;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5625rem;
+  height: 1.5625rem;
 }
 
 #range::-moz-range-thumb {
-    width: 1.75rem;
-    height: 1.75rem;
-    background: var(--lightGray);
-    border-radius: 50%;
-    cursor: pointer;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--lightGray);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /*END SLIDECONTAINER */
 
 /* CHECKBOX CONTAINER */
 #container-checkbox {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkbox-item {
-    position: relative;
-    font-size: 1rem;
-    line-height: 1.3125rem;
-    text-transform: capitalize;
-    margin-top: 1rem;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
 }
 
 /* FROM CODEPEN.IO */
 .checkbox-item input {
-    position: absolute;
-    width: 0;
-    height: 2.5rem;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  width: 0;
+  height: 2.5rem;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /*position new box*/
-.checkbox-item input+label::before {
-    position: absolute;
-    border: 0.125rem solid var(--lightGray);
-    width: 1.25rem;
-    height: 1.25rem;
-    content: '';
-    top: 0;
-    left: 0;
-    transition: background-color 0.1s ease-in;
+.checkbox-item input + label::before {
+  position: absolute;
+  border: 0.125rem solid var(--lightGray);
+  width: 1.25rem;
+  height: 1.25rem;
+  content: '';
+  top: 0;
+  left: 0;
+  transition: background-color 0.1s ease-in;
 }
 
 /*create check symbol with pseudo element*/
-.checkbox-item input+label::after {
-    position: absolute;
-    content: url(assets/images/icon-check.svg);
-    top: 0.0625rem;
-    left: 0.25rem;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    width: 0.75rem;
+.checkbox-item input + label::after {
+  position: absolute;
+  content: url(assets/images/icon-check.svg);
+  top: 0.0625rem;
+  left: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 0.75rem;
 }
 
-.checkbox-item input:checked+label::before {
-    background-color: var(--lightGreen);
-    border: var(--lightGray);
+.checkbox-item input:checked + label::before {
+  background-color: var(--lightGreen);
+  border: var(--lightGray);
 }
 
 /*reveal check for 'on' state*/
-.checkbox-item input:checked+label::after {
-    opacity: 1;
+.checkbox-item input:checked + label::after {
+  opacity: 1;
 }
 
 .checkbox-item label div {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 /* END FROM CODEPEN.IO */
@@ -302,103 +303,103 @@ h1 {
 
 /* STRENGTH INDICATOR */
 #pwd-strength {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--black);
-    padding: 1.0625rem 1rem 1.125rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black);
+  padding: 1.0625rem 1rem 1.125rem;
 }
 
-#pwd-strength>p {
-    text-transform: uppercase;
-    color: var(--gray);
-    font-size: 1rem;
-    line-height: 1.3125rem;
+#pwd-strength > p {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 1rem;
+  line-height: 1.3125rem;
 }
 
 #strength-level-container {
-    display: flex;
-    justify-content: flex-end;
-    min-width: 13.0625rem;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 13.0625rem;
 }
 
 .strength-level-indicator {
-    margin-right: 1rem;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    display: flex;
-    align-items: center;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .strength-level-light {
-    width: 4rem;
-    display: flex;
-    justify-content: space-between;
+  width: 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .strength-level {
-    width: 10px;
-    height: 1.75rem;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: row;
+  width: 10px;
+  height: 1.75rem;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
 }
 
 /* END STRENGTH INDICATOR */
 
 /* BUTTON */
 #btn-generate {
-    margin-top: 2rem;
-    text-transform: uppercase;
-    display: flex;
-    background-color: var(--lightGreen);
-    justify-content: center;
-    padding: 1.3125rem 0;
-    font-size: 1.125rem;
-    line-height: 1.5rem;
-    color: var(--deepBlack);
-    cursor: pointer;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  background-color: var(--lightGreen);
+  justify-content: center;
+  padding: 1.3125rem 0;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--deepBlack);
+  cursor: pointer;
 }
 
-#btn-generate>img {
-    width: 0.694375rem;
-    height: 0.75rem;
-    align-self: center;
-    margin-left: 1.5rem;
+#btn-generate > img {
+  width: 0.694375rem;
+  height: 0.75rem;
+  align-self: center;
+  margin-left: 1.5rem;
 }
 
 /* END BUTTON */
 
 /* COPIED PASSWORD */
 #popupContainer {
-    display: none;
-    /* Hide the popup by default */
-    position: fixed;
-    /* Make the popup fixed to the screen */
-    top: 20%;
-    /* Place the popup 10px from the top of the screen */
-    right: 50%;
-    transform: translate(50%, -50%);
-    /* Place the popup 10px from the right of the screen */
-    z-index: 1;
-    /* Make sure the popup is displayed above other elements */
-    background-color: rgba(164, 255, 175, 0.829);
-    /* Make the popup semi-transparent with a black background */
-    padding: 0.625rem;
-    /* Add some padding to the popup */
-    border-radius: 0.3125rem;
-    /* Make the popup rounded */
+  display: none;
+  /* Hide the popup by default */
+  position: fixed;
+  /* Make the popup fixed to the screen */
+  top: 20%;
+  /* Place the popup 10px from the top of the screen */
+  right: 50%;
+  transform: translate(50%, -50%);
+  /* Place the popup 10px from the right of the screen */
+  z-index: 1;
+  /* Make sure the popup is displayed above other elements */
+  background-color: rgba(164, 255, 175, 0.842);
+  /* Make the popup semi-transparent with a black background */
+  padding: 0.625rem;
+  /* Add some padding to the popup */
+  border-radius: 0.3125rem;
+  /* Make the popup rounded */
 }
 
 #popupContent {
-    display: none;
-    /* Hide the popup content by default */
-    color: white;
-    /* Make the text white */
-    font-size: 2rem;
-    text-transform: capitalize;
+  display: none;
+  /* Hide the popup content by default */
+  color: var(--deepBlack);
+  /* Make the text white */
+  font-size: 2rem;
+  text-transform: capitalize;
 }
 
 /* END COPIED PASSWORD */
