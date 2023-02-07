@@ -232,13 +232,6 @@ body {
     max-width: 43.125rem;
   }
 
-  .container-hero-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   #hero h1 {
     font-size: 2.75rem;
     line-height: 3.4375rem;
@@ -249,8 +242,34 @@ body {
     max-width: 35.8125rem;
     font-size: 1.125rem;
     line-height: 1.75rem;
-    line-height: 1.625rem;
-    color: var(--medium-brown)
   }
+
   /* hero tablet */
 }
+
+/* END TABLET */
+/* DESKTOP */
+@media screen and (min-width: 1400px) {
+  /* desktop hero */
+  #hero {
+    margin-top: 4.125rem;
+    width: 100%;
+    max-width: 46.9375rem;
+  }
+
+  #hero h1 {
+    font-size: 3.5rem;
+    line-height: 4.4375rem;
+    color: var(--black);
+  }
+
+  #hero p {
+    max-width: 45.625rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  /* desktop hero */
+}
+
+/*END DESKTOP */
