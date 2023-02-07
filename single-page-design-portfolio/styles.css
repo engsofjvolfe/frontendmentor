@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -17,36 +17,36 @@ figure,
 blockquote,
 dl,
 dd {
-    margin: 0;
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
-    list-style: none;
+  list-style: none;
 }
 
 /* Set core root defaults */
 html:focus-within {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-    text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /*Make images easier to work with */
 img,
 picture {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -54,39 +54,39 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* TYPOGRAPHY */
 h1 {
-    /* 56px */
-    font-size: 3.5rem;
+  /* 56px */
+  font-size: 3.5rem;
 }
 
 h2 {
-    /* 40px */
-    font-size: 2.5rem;
+  /* 40px */
+  font-size: 2.5rem;
 }
 
 h3 {
-    /* 32px */
-    font-family: 2rem;
+  /* 32px */
+  font-family: 2rem;
 }
 
 /* END TYPOGRAPHY */
@@ -95,75 +95,92 @@ h3 {
 
 /* CSS START */
 :root {
-    --galactic-blue: #755cde;
-    --summer-yellow: #f6a560;
-    --pink: #f39e9e;
-    --light-red: #eb7565;
-    --cyan: #61c4b7;
-    --dark-purple: #552049;
-    --medium-brown: #552049;
-    --black: #030303;
-    --light-cream: #fff7f0;
-    /* 18px */
-    --font-size-small: 1.125rem;
-    /* 28px */
-    --font-size-medium: 1.75rem;
+  --galactic-blue: #755cde;
+  --summer-yellow: #f6a560;
+  --pink: #f39e9e;
+  --light-red: #eb7565;
+  --cyan: #61c4b7;
+  --dark-purple: #552049;
+  --medium-brown: #552049;
+  --black: #030303;
+  --light-cream: #fff7f0;
+  /* 18px */
+  --font-size-small: 1.125rem;
+  /* 28px */
+  --font-size-medium: 1.75rem;
 }
 
 body {
-    background-color: var(--light-cream);
-    font-family: 'Plus Jakarta Sans';
-    /*  */
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 1rem;
+  background-color: var(--light-cream);
+  font-family: 'Plus Jakarta Sans';
+  /*  */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 .container {
-    width: 100%;
-    max-width: 30rem;
-    margin: 2em;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-    border-radius: 2rem;
-    text-align: center;
+  width: 100%;
+  max-width: 30rem;
+  margin: 2em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 2rem;
+  text-align: center;
 }
 
 /* button settings */
 .btn-free-consultation {
-    border: none;
-    border-radius: 1.75rem;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.875rem;
-    line-height: 1.75rem;
-    padding: 0.5rem 1.75rem;
+  width: 11rem;
+  height: 2.75rem;
+  border: none;
+  border-radius: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  padding: 0.5rem 1.6875rem;
 }
 
 .btn-free-consultation.btn-black {
-    background-color: var(--black);
-    color: var(--light-cream);
+  background-color: var(--black);
+  color: var(--light-cream);
 }
 
 .btn-free-consultation.btn-red {
-    background-color: var(--light-red);
-    color: var(--light-cream);
+  background-color: var(--light-red);
+  color: var(--light-cream);
 }
 
 /* end button settings */
 
 /* MOBILE HEADER*/
 .container-header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.container-header>img {
-    width: 3rem;
+.container-header > img {
+  width: 3rem;
 }
 
 /* END MOBILE HEADER */
+
+/* TABLET */
+@media screen and (min-width: 48rem) {
+  /* tablet header */
+  .container-header > img {
+    width: 4rem;
+  }
+  .btn-free-consultation {
+    width: 14.25rem;
+    height: 3.5rem;
+    padding: 0.875rem 2.8125rem;
+    font-size: 1rem;
+  }
+  /* end tablet header */
+}
