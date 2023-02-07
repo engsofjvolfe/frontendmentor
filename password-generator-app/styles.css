@@ -104,18 +104,18 @@ body {
 
 .container {
     width: 100%;
-    min-width: 343px;
-    max-width: 540px;
+    min-width: 21.4375rem;
+    max-width: 33.75rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 16px;
+    padding: 1rem;
 }
 
 h1 {
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
     text-align: center;
     color: #817d92;
     text-transform: capitalize;
@@ -129,19 +129,19 @@ h1 {
 
 #generated-pwd,
 #generate-options {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 #generated-pwd {
     display: flex;
     justify-content: space-between;
-    padding: 17px 16px 15px;
+    padding: 1.0625rem 1rem 0.9375rem;
     align-items: center;
 }
 
 #generated-pwd-container {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 2rem;
+    line-height: 2.625rem;
     color: var(--gray);
     mix-blend-mode: normal;
     opacity: 0.25;
@@ -161,11 +161,11 @@ h1 {
 }
 
 #generated-pwd img {
-    width: 17.5px;
+    width: 1.09375rem;
 }
 
 #generate-options {
-    padding: 24px 16px 32px;
+    padding: 24px 1rem 2rem;
     display: flex;
     flex-direction: column;
 }
@@ -177,8 +177,8 @@ h1 {
 
 #container-character-length h2 {
     text-transform: capitalize;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
     color: #e6e5ea;
 }
 
@@ -189,22 +189,22 @@ h1 {
 }
 
 #character-length {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #a4ffaf;
 }
 
 /* SLIDECONTAINER */
 #slidecontainer {
-    margin-top: 8px;
-    height: 6px;
+    margin-top: 0.5rem;
+    height: 0.375rem;
     border: none;
     background: var(--deepBlack);
 }
 
 #range {
     width: 100%;
-    height: 8px;
+    height: 0.5rem;
     border-radius: 25;
     background-color: var(--black);
     border-radius: 0.6rem;
@@ -220,13 +220,13 @@ h1 {
 #range::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 1.5625rem;
+    height: 1.5625rem;
 }
 
 #range::-moz-range-thumb {
-    width: 28px;
-    height: 28px;
+    width: 1.75rem;
+    height: 1.75rem;
     background: var(--lightGray);
     border-radius: 50%;
     cursor: pointer;
@@ -236,24 +236,24 @@ h1 {
 
 /* CHECKBOX CONTAINER */
 #container-checkbox {
-    margin-top: 16px;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
 }
 
 .checkbox-item {
     position: relative;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1rem;
+    line-height: 1.3125rem;
     text-transform: capitalize;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
 /* FROM CODEPEN.IO */
 .checkbox-item input {
     position: absolute;
     width: 0;
-    height: 40px;
+    height: 2.5rem;
     top: 0;
     left: 0;
     opacity: 0;
@@ -263,9 +263,9 @@ h1 {
 /*position new box*/
 .checkbox-item input+label::before {
     position: absolute;
-    border: 2px solid var(--lightGray);
-    width: 20px;
-    height: 20px;
+    border: 0.125rem solid var(--lightGray);
+    width: 1.25rem;
+    height: 1.25rem;
     content: '';
     top: 0;
     left: 0;
@@ -276,11 +276,11 @@ h1 {
 .checkbox-item input+label::after {
     position: absolute;
     content: url(assets/images/icon-check.svg);
-    top: 1px;
-    left: 4px;
+    top: 0.0625rem;
+    left: 0.25rem;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    width: 12px;
+    width: 0.75rem;
 }
 
 .checkbox-item input:checked+label::before {
@@ -294,7 +294,7 @@ h1 {
 }
 
 .checkbox-item label div {
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 /* END FROM CODEPEN.IO */
@@ -307,40 +307,40 @@ h1 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--black);
-    padding: 17px 1rem 18px;
+    padding: 1.0625rem 1rem 1.125rem;
 }
 
 #pwd-strength>p {
     text-transform: uppercase;
     color: var(--gray);
     font-size: 1rem;
-    line-height: 21px;
+    line-height: 1.3125rem;
 }
 
 #strength-level-container {
     display: flex;
     justify-content: flex-end;
-    min-width: 209px;
+    min-width: 13.0625rem;
 }
 
 .strength-level-indicator {
     margin-right: 1rem;
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     display: flex;
     align-items: center;
 }
 
 .strength-level-light {
-    width: 64px;
+    width: 4rem;
     display: flex;
     justify-content: space-between;
 }
 
 .strength-level {
     width: 10px;
-    height: 28px;
+    height: 1.75rem;
     border: 1px solid white;
     display: flex;
     flex-direction: row;
@@ -355,18 +355,18 @@ h1 {
     display: flex;
     background-color: var(--lightGreen);
     justify-content: center;
-    padding: 21px 0;
-    font-size: 18px;
-    line-height: 24px;
+    padding: 1.3125rem 0;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     color: var(--deepBlack);
     cursor: pointer;
 }
 
 #btn-generate>img {
-    width: 11.11px;
-    height: 12px;
+    width: 0.694375rem;
+    height: 0.75rem;
     align-self: center;
-    margin-left: 24px;
+    margin-left: 1.5rem;
 }
 
 /* END BUTTON */
@@ -386,9 +386,9 @@ h1 {
     /* Make sure the popup is displayed above other elements */
     background-color: rgba(164, 255, 175, 0.829);
     /* Make the popup semi-transparent with a black background */
-    padding: 10px;
+    padding: 0.625rem;
     /* Add some padding to the popup */
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     /* Make the popup rounded */
 }
 
@@ -397,7 +397,8 @@ h1 {
     /* Hide the popup content by default */
     color: white;
     /* Make the text white */
-    font-size: 32px;
+    font-size: 2rem;
     text-transform: capitalize;
 }
+
 /* END COPIED PASSWORD */

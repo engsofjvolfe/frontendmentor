@@ -11,15 +11,16 @@ const strengthLevelLights = document.querySelectorAll('.strength-level-light')
 //COPY PASSWORD
 // Adding click event listener to the "copy" button
 copy.addEventListener('click', function () {
-    // Using the Clipboard API to write the text content of the "generatedPwd" element to the clipboard
+    //verify if new password was generated
     if (generatedPwd.textContent === 'P4$5W0rD!') {
-        showPasswordCopiedPopup("Generate new password first")
+        showPasswordCopiedPopup('Generate new password first')
     } else {
+        // Using the Clipboard API to write the text content of the "generatedPwd" element to the clipboard
         navigator.clipboard.writeText(generatedPwd.textContent).then(
             function () {
                 console.log(`Password copied to clipboard: ${generatedPwd}`)
                 // Show the "Password copied" message
-                showPasswordCopiedPopup("Password Copied")
+                showPasswordCopiedPopup('Password Copied')
             },
             function (err) {
                 // Log an error message to the console if the text could not be copied
@@ -132,7 +133,7 @@ btn.addEventListener('click', function () {
     //element colors update
 })
 
-// Function to show the "Password copied" message
+// Function to show the "Password generated" status 
 function showPasswordCopiedPopup(message) {
     // Get the popup container and content
     const popupContainer = document.getElementById('popupContainer')
@@ -184,6 +185,7 @@ function evaluatePasswordStrength(password) {
 }
 //end assess the strength of a password based on the characters added."
 
+//UPDATE THE STRENGTH STATUS OF THE PASSWORD
 function updatePasswordStrength(password) {
     // Variable to store the result of the password strength evaluation
     var passwordStrength = evaluatePasswordStrength(password)
