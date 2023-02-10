@@ -21,13 +21,12 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ### Screenshot
 
-![](./images/mobileScreenshot.png)
-![](./images/desktopScreenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/single-price-grid-component-master)
+- Live Site URL: [Live site URL](https://jvolfe-flexbox-lpg.netlify.app/)
 
 ## My process
 
@@ -37,6 +36,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - CSS custom properties
 - Mobile-first workflow
 - JavaScript
+- CSS FlexBox
 
 ### What I learned
 
