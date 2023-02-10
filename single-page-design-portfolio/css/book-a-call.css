@@ -64,4 +64,31 @@
     margin-top: 1.625rem;
   }
 }
+
 /* END TABLET */
+
+/* DESKTOP */
+@media screen and (min-width: 69.4375rem) {
+  .container-book-a-call {
+    flex-direction: row;
+    padding: 5rem 4.0625rem;
+  }
+
+  .container-book-a-call-text {
+    margin-right: 11.375rem;
+    text-align: start;
+  }
+
+  .container-book-a-call-text > h2 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+  }
+
+  .container-book-a-call-text > p {
+    margin-top: 1.5625rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+/* END DESKTOP */
