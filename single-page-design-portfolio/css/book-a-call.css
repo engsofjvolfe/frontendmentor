@@ -1,0 +1,39 @@
+@import url(styles.css);
+
+/* MOBILE */
+#book-a-call-with-me {
+    margin-top: 25rem;
+}
+
+.container-book-a-call {
+    background-color: var(--black);
+    padding: 3.0625rem 1.5rem 3rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-book-a-call-text {
+    color: var(--white);
+    text-align: center;
+}
+
+.container-book-a-call-text>h2 {
+    font-size: 1.625rem;
+    line-height: 2.0625rem;
+}
+
+.container-book-a-call-text>p {
+    width: 18.4375rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--light-cream);
+}
+
+.btn-free-consultation {
+    margin-top: 1.5rem;
+}
+
+/* END MOBILE */
