@@ -1,8 +1,7 @@
 @import url(styles.css);
 
 #projects {
-
-    margin-top: 100px;
+    margin-top: 6.25rem;
     display: flex;
     justify-content: center;
 }
@@ -30,7 +29,6 @@
 .gallery-wrapper {
     overflow-x: auto;
 }
-
 
 .gallery {
     margin-top: 2rem;
@@ -63,15 +61,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     /* Firefox */
 }
 
-
-/* BUTTONS */
+/* MOBILE BUTTONS */
 .container-projects-btn {
     margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 
 .arrow-left,
 .arrow-right {
@@ -97,4 +93,28 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     border-radius: 50%;
 }
 
-/* END BUTTONS */
+/* END MOBILE BUTTONS */
+
+/* TABLET */
+@media screen and (min-width:48rem) {
+    #projects {
+        margin-top: 31rem;
+    }
+
+    #projects h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .gallery {
+        margin-top: 3.5rem;
+        gap: 1.875rem;
+    }
+
+    .item {
+        width: 33.75rem;
+        height: 22.5rem;
+    }
+}
+
+/* END TABLET */
