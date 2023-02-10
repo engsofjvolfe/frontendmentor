@@ -2,93 +2,93 @@
 
 /* MOBILE */
 #book-a-call-with-me {
-  margin-top: 25rem;
+    margin-top: 25rem;
 }
 
 .container-book-a-call {
-  background-color: var(--black);
-  padding: 3.0625rem 1.5rem 3rem;
-  border-radius: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background-color: var(--black);
+    padding: 3.0625rem 1.5rem 3rem;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container-book-a-call-text {
-  color: var(--white);
-  text-align: center;
+    color: var(--white);
+    text-align: center;
 }
 
-.container-book-a-call-text > h2 {
-  font-size: 1.625rem;
-  line-height: 2.0625rem;
+.container-book-a-call-text>h2 {
+    font-size: 1.625rem;
+    line-height: 2.0625rem;
 }
 
-.container-book-a-call-text > p {
-  width: 18.4375rem;
-  margin-top: 1.5rem;
-  font-size: 1rem;
-  line-height: 1.625rem;
-  color: var(--light-cream);
+.container-book-a-call-text>p {
+    width: 18.4375rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--light-cream);
 }
 
-.btn-free-consultation {
-  margin-top: 1.5rem;
+.container-book-a-call .btn-free-consultation {
+    margin-top: 1.5rem;
 }
 
 /* END MOBILE */
 
 /* TABLET */
 @media screen and (min-width: 48rem) {
-  #book-a-call-with-me {
-    margin-top: 43rem;
-  }
+    #book-a-call-with-me {
+        margin-top: 43rem;
+    }
 
-  .container-book-a-call {
-    padding: 3.5rem 4.6875rem 4rem;
-  }
+    .container-book-a-call {
+        padding: 3.5rem 4.6875rem 4rem;
+    }
 
-  .container-book-a-call-text > h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
+    .container-book-a-call-text>h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 
-  .container-book-a-call-text > p {
-    width: 33.75rem;
-    margin-top: 1.625rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
+    .container-book-a-call-text>p {
+        width: 33.75rem;
+        margin-top: 1.625rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
 
-  .btn-free-consultation {
-    margin-top: 1.625rem;
-  }
+    .container-book-a-call .btn-free-consultation {
+        margin-top: 1.625rem;
+    }
 }
 
 /* END TABLET */
 
 /* DESKTOP */
 @media screen and (min-width: 69.4375rem) {
-  .container-book-a-call {
-    flex-direction: row;
-    padding: 5rem 4.0625rem;
-  }
+    .container-book-a-call {
+        flex-direction: row;
+        padding: 5rem 4.0625rem;
+    }
 
-  .container-book-a-call-text {
-    margin-right: 11.375rem;
-    text-align: start;
-  }
+    .container-book-a-call-text {
+        margin-right: 11.375rem;
+        text-align: start;
+    }
 
-  .container-book-a-call-text > h2 {
-    font-size: 2.5rem;
-    line-height: 3.125rem;
-  }
+    .container-book-a-call-text>h2 {
+        font-size: 2.5rem;
+        line-height: 3.125rem;
+    }
 
-  .container-book-a-call-text > p {
-    margin-top: 1.5625rem;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
+    .container-book-a-call-text>p {
+        margin-top: 1.5625rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
 }
 
 /* END DESKTOP */
