@@ -1,0 +1,35 @@
+@import url(styles.css);
+
+/* MOBILE HEADER*/
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-header > img {
+  width: 3rem;
+}
+
+/* END MOBILE HEADER */
+
+/* TABLET */
+@media screen and (min-width: 48rem) {
+  /* tablet header */
+  .container-header > img {
+    width: 4rem;
+  }
+
+  /* end tablet header */
+}
+
+/* END TABLET */
+
+/* DESKTOP */
+@media screen and (min-width: 69.4375rem) {
+  /* desktop hero */
+  .container-header {
+    width: 1111px;
+  }
+}
+
+/*END DESKTOP */
