@@ -18,9 +18,19 @@
     color: var(--light-cream);
 }
 
+.btn-free-consultation.btn-black:hover {
+    cursor: pointer;
+    background-color: var(--galactic-blue);
+}
+
 .btn-free-consultation.btn-red {
     background-color: var(--light-red);
     color: var(--light-cream);
+}
+
+.btn-free-consultation.btn-red:hover {
+    cursor: pointer;
+    background-color: var(--summer-yellow);
 }
 
 /* end button settings */
@@ -34,4 +44,5 @@
         font-size: 1rem;
     }
 }
+
 /* END TABLET */
