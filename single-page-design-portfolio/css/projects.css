@@ -1,6 +1,7 @@
 @import url(styles.css);
 
 #projects {
+
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -62,3 +63,38 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     /* Firefox */
 }
 
+
+/* BUTTONS */
+.container-projects-btn {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.arrow-left,
+.arrow-right {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14.81px;
+    padding: 24px;
+}
+
+.arrow-left {
+    margin-right: 0.5rem;
+    background-image: url(../assets/icon-arrow-left.svg);
+}
+
+.arrow-right {
+    margin-left: 0.5rem;
+    background-image: url(../assets/icon-arrow-right.svg);
+}
+
+.control {
+    border-color: var(--black);
+    background-color: var(--black);
+    border-radius: 50%;
+}
+
+/* END BUTTONS */
