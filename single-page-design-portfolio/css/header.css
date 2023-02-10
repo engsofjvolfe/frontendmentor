@@ -6,17 +6,31 @@
   justify-content: space-between;
 }
 
-.container-header > img {
+.container-header>img {
   width: 3rem;
 }
 
 /* END MOBILE HEADER */
 
+/* MOBILE FOOTER */
+/*FOOTER */
+footer {
+  margin-top: 2.5rem;
+}
+
+/*END MOBILE FOOTER */
+
+
 /* TABLET */
 @media screen and (min-width: 48rem) {
+
   /* tablet header */
-  .container-header > img {
+  .container-header>img {
     width: 4rem;
+  }
+
+  footer {
+    margin-top: 56px;
   }
 
   /* end tablet header */
@@ -26,6 +40,7 @@
 
 /* DESKTOP */
 @media screen and (min-width: 69.4375rem) {
+
   /* desktop hero */
   .container-header {
     width: 1111px;
