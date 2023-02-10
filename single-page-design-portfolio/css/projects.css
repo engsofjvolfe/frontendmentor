@@ -96,7 +96,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 /* END MOBILE BUTTONS */
 
 /* TABLET */
-@media screen and (min-width:48rem) {
+@media screen and (min-width: 48rem) {
     #projects {
         margin-top: 31rem;
     }
@@ -115,6 +115,19 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
         width: 33.75rem;
         height: 22.5rem;
     }
+
+    .container-projects-btn {
+        margin-top: 3.5rem;
+    }
 }
 
 /* END TABLET */
+
+/* DESKTOP */
+@media screen and (min-width: 69.4375rem) {
+    #projects {
+        margin-top: 6.25rem;
+    }
+}
+
+/* END DESKTOP */
