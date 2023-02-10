@@ -1,6 +1,6 @@
 # Frontend Mentor - Ping coming soon page solution
 
-This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Single Price Grid Component Master](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -17,17 +17,15 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
 
-![](./images/mobileScreenshot.png)
-![](./images/desktopScreenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/edit/main/single-price-grid-component-master/README.md)
+- Live Site URL: [Live site URL](https://jvolfe-flexbox-lpg.netlify.app/)
 
 ## My process
 
@@ -36,7 +34,6 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 - Semantic HTML5 markup
 - CSS custom properties
 - Mobile-first workflow
-- JavaScript
 
 ### What I learned
 
@@ -46,5 +43,4 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 - Git Hub - [@engsofjvolfe](https://github.com/engsofjvolfe)
 - Frontend Mentor - [@engsofjvolfe](https://www.frontendmentor.io/profile/engsofjvolfe)
-- Instagram - [@jeanco_volfe](https://www.instagram.com/jeanco_volfe/)
 - LinkedIn - [@jeanco-volfe](https://www.linkedin.com/in/jeanco-volfe/)
