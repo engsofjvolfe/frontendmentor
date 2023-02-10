@@ -10,8 +10,6 @@ This is a solution to the [Single-page design portfolio challenge on Frontend Me
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -32,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://github.com/engsofjvolfe/frontendmentor/tree/main/single-page-design-portfolio)
+- Live Site URL: [Live site URL](https://jvolfe-single-design-portfolio.netlify.app/)
 
 ## My process
 
@@ -44,10 +42,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - JavaScript
-
-### What I learned
-
-### Continued development
 
 ## Author
 
