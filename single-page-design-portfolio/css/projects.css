@@ -1,7 +1,7 @@
 @import url(styles.css);
 
 #projects {
-    margin-top: 6.25rem;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
 }
@@ -30,52 +30,20 @@
     overflow-x: auto;
 }
 
-.arrow-left,
-.arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    color: #fff;
-    transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    cursor: pointer;
-    border: none;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-    opacity: 1;
-}
-
-.arrow-right {
-    right: 0;
-    left: auto;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-}
 
 .gallery {
+    margin-top: 2rem;
     display: flex;
     flex-flow: row nowrap;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 .item {
-    width: 250px;
-    height: 250px;
+    width: 16.875rem;
+    height: 11.25rem;
+    border-radius: 0.625rem;
     flex-shrink: 0;
     transition: all 600ms ease-in-out;
-    opacity: 0.5;
-}
-
-.current-item {
-    opacity: 1;
 }
 
 /* This is from w3schools */
@@ -94,22 +62,3 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     /* Firefox */
 }
 
-.cyan {
-    background: cyan;
-}
-
-.deeppink {
-    background: deeppink;
-}
-
-.turquoise {
-    background: turquoise;
-}
-
-.darkblue {
-    background: darkblue;
-}
-
-.purple {
-    background: purple;
-}
